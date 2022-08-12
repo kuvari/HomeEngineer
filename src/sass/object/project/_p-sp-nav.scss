@@ -12,6 +12,7 @@
     display: block;
     text-align: right;
     font-size: 12px;
+    font-weight: $semibold;
     transition: .4s;
 }
 
@@ -27,4 +28,5 @@
     padding-top: rem(21);
     padding-bottom: rem(21);
     font-size: rem(18);
+    font-weight: $semibold;
 }
