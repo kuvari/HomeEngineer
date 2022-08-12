@@ -4,13 +4,13 @@
   <body>
     <%- include('./common/_p-header') %>
       <%# include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+      
+      
+      <% for (var i=0; i < 4; i++) { %>
+        <%# include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+        <% } %>
+        
+        
     <%- include('./common/_footer') %>
-
-
-    <% for (var i=0; i < 4; i++) { %>
-      <%# include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
-
-
   </body>
 </html>

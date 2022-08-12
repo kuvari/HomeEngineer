@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.p-footer__logo {
+    max-width: rem(212);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq('md') {
+        max-width: rem(302);
+        margin-left: initial;
+        margin-right: initial;
+    }
+}
+
+.p-footer__inner {
+    @include mq('md') {
+    display: flex;
+    justify-content: center;
+    }
+}
+.p-footer__info {
+    margin-top: rem(70);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(32);
+    }
+}
+
+.p-footer__text {
+    font-size: 14px;
+    line-height: 2.5714;
+    font-weight: $regular;
+    @include mq('md') {
+        font-size: rem(18);
+        line-height: 2;
+    }
+}
+
+.p-footer__copyright {
+    margin-top: rem(402);
+    text-align: center;
+    padding-bottom: rem(9);
+    @include mq('md') {
+        margin-top: rem(23);
+    }
+}
+
+.p-footer__copyright small {
+    font-size: 13px;
+    font-weight: $semibold;
+    line-height: 2.4615;
+}
