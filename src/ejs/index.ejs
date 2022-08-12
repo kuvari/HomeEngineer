@@ -2,15 +2,14 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_p-header') %>
-      <%# include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
       
       
       <% for (var i=0; i < 4; i++) { %>
-        <%# include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
+        <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
         <% } %>
         
+<%- include('./common/_top-greeting') %>
         
-    <%- include('./common/_footer') %>
   </body>
 </html>

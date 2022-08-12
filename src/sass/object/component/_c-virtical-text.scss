@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-virtical-text {
+    display: inline-block;
+    color: #EBEBEB;
+    font-size: rem(120);
+    line-height: 1.325;
+    transform: rotate(-90deg);
+    // フォントファミリー未設定
+    @include mq('md') {
+        font-size: rem(347);
+        line-height: 1.3285;
+    }
+}
