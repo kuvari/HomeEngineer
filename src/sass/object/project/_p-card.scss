@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.body {
+    color: $white;
+}
+
+.p-card__title,
+.p-card__text,
+.p-card__category,
+.p-card__sub-category,
+.p-card__date
+{
+    color: $white;
+}
+
+.p-card__title {
+    font-weight: $extrabold;
+    font-size: rem(20);
+    line-height: 3.85;
+}
+
+.p-card__text {
+    font-size: rem(18);
+    line-height: 6;
+}
