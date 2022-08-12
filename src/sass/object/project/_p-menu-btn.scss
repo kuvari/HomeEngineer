@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.p-menu-btn__text {
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: rem(-10);
+}
