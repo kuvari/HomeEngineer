@@ -45,3 +45,13 @@
 .p-card__body {
     padding: 0.4rem 2.4rem 1.5rem;
 }
+
+.p-card__info,
+.p-card__text {
+    padding-top: 0.6rem;
+}
+
+.p-card {
+    display: block;
+    background-color: #646157;
+}
