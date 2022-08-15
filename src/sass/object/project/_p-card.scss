@@ -4,6 +4,10 @@
     color: $white;
 }
 
+.l-blog {
+    margin-top: rem(20);
+}
+
 .p-card__title,
 .p-card__text,
 .p-card__category,
@@ -61,4 +65,8 @@
     max-width: rem(110);
     width: 100%;
     margin: auto;
+}
+
+.p-card__items {
+    display: flex;
 }
