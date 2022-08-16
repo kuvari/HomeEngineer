@@ -2,16 +2,14 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
-    <%- include('./project/_p-header') %>
 
-      <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+      <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
       
       
       <% for (var i=0; i < 4; i++) { %>
-        <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+        <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
         <% } %>
         
-        <%- include('./project/_p-top-content') %>
         
   </body>
 </html>
