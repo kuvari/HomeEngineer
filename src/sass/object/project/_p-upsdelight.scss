@@ -4,25 +4,28 @@
 .p-upsdelight__container{
 }
 .p-upsdelight__inner{
-  padding: rem(30);
+  padding: rem(300) rem(30);
   display: flex;
   align-items: center;
   position: relative;
-  height: 580px;
-}
-.p-upsdelight__inner::before{
   background-image: url(../images/common/asagao-black.png);
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
-  content: "";
-  position: absolute;
-  width: 50%;
-  padding-top: 50%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  background-position: center;
 }
+// .p-upsdelight__inner::before{
+//   background-image: url(../images/common/asagao-black.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   display: block;
+//   content: "";
+//   position: absolute;
+//   width: 50%;
+//   padding-top: 50%;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 .p-upsdelight__l{
   width: 50%;
   display: flex;
@@ -42,6 +45,7 @@
   order: 1;
   padding-right: rem(40);
   margin-top: rem(-100);
+  margin-left: rem(40);
 }
 .p-upsdelight__r-title{
   font-size: rem(60);
@@ -50,6 +54,9 @@
   display: flex;
   align-items:flex-end;
   margin-bottom: rem(-100);
+}
+.p-upsdelight__r-text{
+  margin-left: rem(40);
 }
 .p-upsdelight__container::after{
   content: "";
