@@ -197,6 +197,12 @@
     position: relative;
 }
 
+.c-top-content-title__block04 {
+    @include mq('md') {
+        max-width: rem(700);
+    }
+}
+
 .c-top-content-title__block04 span:nth-child(1){
     font-size: rem(55);
     font-weight: $semibold;

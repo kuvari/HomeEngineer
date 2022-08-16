@@ -90,7 +90,7 @@
     margin-left: auto;
     margin-right: auto;
     aspect-ratio: 373 / 138;
-    // display: inline-block;
+    margin-top: rem(66);
     @include mq('md') {
         max-width: rem(700);
         margin-left: initial;
