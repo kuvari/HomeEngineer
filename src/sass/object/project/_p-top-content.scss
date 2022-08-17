@@ -26,6 +26,7 @@
 }
 
 .p-top-content__body-a {
+    position: relative;
     @include mq('md') {
         display: flex;
         flex-direction: row-reverse;
