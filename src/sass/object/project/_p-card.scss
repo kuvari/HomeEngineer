@@ -63,6 +63,15 @@
     margin: auto;
 }
 
-.p-card__items {
+.p-card__list {
     display: flex;
+}
+
+.p-card-list__item {
+    width: calc(33.3333% - rem(2.5) * 2 / 3);
+}
+
+.p-card-list__item +
+.p-card-list__item {
+    margin-left: rem(2.5);
 }
