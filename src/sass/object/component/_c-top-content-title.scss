@@ -1,0 +1,304 @@
+@use "global" as *;
+
+.c-top-content-title__block01, 
+.c-top-content-title__block02, 
+.c-top-content-title__block03, 
+.c-top-content-title__block04, 
+.c-top-content-title__block05 {
+    white-space: nowrap; 
+    display: inline-block;
+}
+
+.c-top-content-title__block01 span,
+.c-top-content-title__block02 span,
+.c-top-content-title__block03 span {
+    display: inline-block;
+    position: relative;
+    line-height: 1.48;
+}
+
+.c-top-content-title__block02 {
+    margin-top: rem(-30);
+    padding-left: rem(60);
+    @include mq('md') {
+        margin-top: rem(-40);
+        padding-left: rem(100);
+    }
+}
+
+.c-top-content-title__block03 {
+    margin-top: rem(-40);
+    padding-left: rem(10);
+    @include mq('md') {
+        margin-top: rem(-50);
+    }
+}
+
+
+.c-top-content-title__block01 span:nth-child(1){
+    font-size: rem(100);
+    font-weight: $regular;
+    @include mq('md') {
+        font-size: rem(188);
+    }
+}
+
+.c-top-content-title__block01 span:nth-child(2){
+    font-size: rem(62);
+    font-weight: $semibold;
+    top: rem(-10);
+    left: rem(-30);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+    }
+
+}
+
+.c-top-content-title__block01 span:nth-child(3){
+    font-size: rem(65);
+    font-weight: $semibold;
+    top: rem(-14);
+    left: rem(-46);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+    }
+}
+
+.c-top-content-title__block01 span:nth-child(4){
+    font-size: rem(49);
+    font-weight: $extrabold;
+    line-height: 1.4897;
+    top: rem(-14);
+    left: rem(-76);
+    @include mq('md') {
+        font-size: rem(89);
+        line-height: 1.4831;
+    }
+
+}
+
+.c-top-content-title__block01 span:nth-child(5){
+    font-size: rem(65);
+    font-weight: $semibold;
+    top: rem(-14);
+    left: rem(-96);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+    }
+}
+
+.c-top-content-title__block01 span:nth-child(6){
+    font-size: rem(65);
+    font-weight: $semibold;
+    top: rem(-16);
+    left: rem(-120);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+    }
+
+}
+
+.c-top-content-title__block02 span:nth-child(1){
+    font-size: rem(43);
+    font-weight: $extrabold;
+    line-height: 1.4651;
+    top: rem(-34);
+    @include mq('md') {
+        font-size: rem(80);
+        line-height: 1.4875;
+        top: rem(-50);
+    }
+
+}
+
+.c-top-content-title__block02 span:nth-child(2){
+    font-size: rem(78);
+    font-weight: $semibold;
+    line-height: 1.4743;
+    left: rem(-10);
+    @include mq('md') {
+        font-size: rem(137);
+        line-height: 1.47445;
+    }
+
+}
+
+.c-top-content-title__block02 span:nth-child(3){
+    font-size: rem(78);
+    font-weight: $semibold;
+    line-height: 1.4743;
+    left: rem(-10);
+    @include mq('md') {
+        font-size: rem(137);
+        line-height: 1.47445;
+    }
+
+}
+
+.c-top-content-title__block02 span:nth-child(4){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    top: rem(16);
+    left: rem(-10);
+    @include mq('md') {
+        font-size: rem(100);
+        line-height: 1.48;
+    }
+}
+
+.c-top-content-title__block03 span:nth-child(1){
+    font-size: rem(92);
+    font-weight: $medium;
+    color: #E2BD44;
+    @include mq('md') {
+        font-size: rem(170);
+        line-height: 1.47647;
+    }
+}
+
+.c-top-content-title__block03 span:nth-child(2){
+    font-size: rem(62);
+    font-weight: $extrabold;
+    line-height: 1.4677;
+    @include mq('md') {
+        font-size: rem(112);
+        line-height: 1.4732;
+    }
+}
+
+.c-top-content-title__block03 span:nth-child(3){
+    font-size: rem(62);
+    font-weight: $extrabold;
+    line-height: 1.4677;
+    @include mq('md') {
+        font-size: rem(112);
+        line-height: 1.4732;
+    }
+}
+
+.c-top-content-title__block03 span:nth-child(4){
+    font-size: rem(43);
+    font-weight: $extrabold;
+    line-height: 1.4651;
+    @include mq('md') {
+        font-size: rem(77);
+        line-height: 1.4805;
+    }
+}
+
+.c-top-content-title__block04 span,
+.c-top-content-title__block05 span {
+    display: inline-block;
+    position: relative;
+}
+
+.c-top-content-title__block04 {
+    @include mq('md') {
+        max-width: rem(700);
+    }
+}
+
+.c-top-content-title__block04 span:nth-child(1){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    color: #E2BD44;
+    @include mq('md') {
+    font-size: rem(120);
+    line-height: 1.475;
+    }
+}
+
+.c-top-content-title__block04 span:nth-child(2){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    left: rem(-14);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+        }
+}
+
+.c-top-content-title__block04 span:nth-child(3){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    left: rem(-24);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+        left: rem(-30);
+        }
+}
+
+.c-top-content-title__block04 span:nth-child(4){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    left: rem(-38);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+        left: rem(-44);
+        }
+}
+
+.c-top-content-title__block04 span:nth-child(5){
+    font-size: rem(46);
+    font-weight: $semibold;
+    line-height: 1.5;
+    left: rem(-60);
+    @include mq('md') {
+        font-size: rem(97);
+        line-height: 1.48453;
+        left: rem(-70);
+        }
+}
+
+.c-top-content-title__block04 span:nth-child(6){
+    font-size: rem(41);
+    font-weight: $semibold;
+    line-height: 1.48;
+    left: rem(-75);
+    @include mq('md') {
+        font-size: rem(87);
+        line-height: 1.47126;
+        left: rem(-90);
+        }
+}
+
+.c-top-content-title__block04 span:nth-child(7){
+    font-size: rem(55);
+    font-weight: $semibold;
+    line-height: 1.4909;
+    left: rem(-90);
+    @include mq('md') {
+        font-size: rem(120);
+        line-height: 1.475;
+        left: rem(-100);
+        }
+}
+
+.c-top-content-title__block05 {
+    padding-left: 37.2654%;
+    @include mq('md') {
+        margin-top: rem(-20);
+    }
+}
+
+.c-top-content-title__block05 span {
+    font-size: rem(48);
+    font-weight: $semibold;
+    line-height: 1.4791;
+    // left: rem(-24);
+    @include mq('md') {
+        font-size: rem(103);
+        line-height: 1.4757;
+        }
+}

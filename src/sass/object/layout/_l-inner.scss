@@ -14,12 +14,3 @@
 		padding-left: $padding-pc;
 	}
 }
-
-.l-maxinner{
-	background-image: url(../images/common/bg.jpg);
-	background-size: contain;
-	@include mq("md"){
-		margin: 0 auto;
-		max-width: 1920px;
-	}
-}

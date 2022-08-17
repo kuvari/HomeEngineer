@@ -2,6 +2,7 @@
 
 .p-header {
     height: rem(89);
+    background-color: transparent;
 }
 
 .p-header__inner {
@@ -14,6 +15,8 @@
     @include mq('md') {
         padding-left: rem(28);
         padding-right: rem(52);
+        background-color: transparent;
+
     }
 }
 
