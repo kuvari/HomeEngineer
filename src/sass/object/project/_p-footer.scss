@@ -4,13 +4,23 @@
     background-image: url(/images/common/footer_bg.jpg);
     padding-top: rem(70);
     border-top: rem(10) solid $black;
+    position: relative;
     @include mq('md') {
         padding-top: rem(73);
         border-top: rem(20) solid $black;
-
     }
 }
-
+.p-footer::after {
+    // background-image: url(/images/common/bg_img03.png);
+    content: "";
+    display: block;
+    width: rem(570);
+    height: rem(330);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
 .p-footer__logo {
     max-width: rem(212);
     width: 100%;
