@@ -59,9 +59,11 @@
 .p-card__list {
     // display: flex;
     // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.5rem;
+    }
 }
 
 // .p-card-list__item {
