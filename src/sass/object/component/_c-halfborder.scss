@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.c-halfborder{
+  font-size: rem(20);
+  @include mq("md"){
+    display: flex;
+  }
+}
+.c-halfborder__title{
+  @include mq("md"){
+    width: 50%;
+    border-right: rem(1) solid #000000; /*線の設定*/
+    display: flex;
+    justify-content: end;
+    text-align: left;
+  }
+}
+.c-halfborder__title p{
+  @include mq("md"){
+    width: 20%;
+  }
+}
+
+.c-halfborder__text{
+  margin-left: rem(20);
+  padding-left: rem(20);
+  border-left: rem(1) solid #000000; /*線の設定*/
+  @include mq("md"){
+    width: 50%;
+    border-left: initial;
+    padding-left: initial;
+  }
+}
+
+.c-halfborder+.c-halfborder{
+  @include mq("md"){
+    margin-top: rem(30);
+  }
+}

@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.p-info{
+.c-info{
   width: 100%;
 }
-.p-info__block{
+.c-info__block{
   display: none;
   @include mq("md"){
     width: 40%;
@@ -18,14 +18,14 @@
   }
 }
 
-.p-info__l{
+.c-info__left{
   width: 13%;
   font-size: rem(24);
   font-weight: $bold;
   text-transform: capitalize;
   text-align: right;
 }
-.p-info__c{
+.c-info__center{
   width: 66%;
   margin-left: 3%;
   font-size: rem(18);
@@ -33,11 +33,11 @@
   padding-left: rem(15);
   border-left: solid rem(2) $black;
 }
-.p-info__c span{
+.c-info__center span{
   border-bottom: solid rem(1) $black;
   margin-left: 3%;
 }
-.p-info__r{
+.c-info__right{
   width: 15%;
   display: inline-block;
   font-size: rem(24);
@@ -45,7 +45,7 @@
   position: relative;
   text-decoration: none;
 }
-.p-info__r:after {
+.c-info__right:after {
   content: '';
   width: rem(6);
   height: rem(6);
