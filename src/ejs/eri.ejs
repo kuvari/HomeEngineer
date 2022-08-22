@@ -3,17 +3,17 @@
 <%- include('./common/_head') %>
   <body class="l-maxinner">
     <section class="p-hero">
-    <%- include('./common/_p-hero') %>
+      <%- include('./project/_p-hero') %>
     </section>
-
-    <%- include('./component/_c-info',{text__l:'info', text__c:'公式サイト公開', text__r:'more', date:'2022年8月1日', link:'#'}) %>
-    
     <section class="p-overview c-halfview">
-    <%- include('./project/_p-overview') %>
+      <%- include('./project/_p-overview') %>
+    </section>
+    <section class="p-upsdelight c-halfview">
+      <%- include('./project/_p-upsdelight') %>
     </section>
 
-    <section class="p-upsdelight c-halfview">
-    <%- include('./project/_p-upsdelight') %>
+    <section class="p-single-portforio__halfborder">
+      <%- include('./component/_c-halfborder',{title:'クライアント',name:'Codeups様'}) %>
     </section>
   </body>
 </html>
