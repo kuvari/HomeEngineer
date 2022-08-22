@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-sp-nav {
+    background-color: #E5E1C8;
+}
+
+.p-sp-nav__btn {
+    width: rem(50);
+    margin-top: rem(20);
+    margin-left: rem(38);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.p-sp-nav__text {
+    text-transform: uppercase;
+    display: block;
+    padding-left: rem(4);
+    font-size: 12px;
+    font-weight: $semibold;
+    transition: .4s;
+}
+
+.p-sp-nav__items {
+    padding-top: rem(96);
+    padding-bottom: rem(450);
+    text-align: center;
+    transition: .4s;
+}
+
+.p-sp-nav__item a {
+    display: block;
+    padding-top: rem(21);
+    padding-bottom: rem(21);
+    font-size: rem(18);
+    font-weight: $semibold;
+}

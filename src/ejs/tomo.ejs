@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./project/_p-header') %>
+    </header>
+
+      <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+      
+      
+      <% for (var i=0; i < 4; i++) { %>
+        <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+        <% } %>
+        
+        <section class="l-top-content">
+          <%- include('./project/_p-top-content') %>
+        </section>
+        
+        <%- include('./project/_p-top-greeting') %>
+        
+        <footer class="l-footer">
+          <%- include('./project/_p-footer') %>
+        </footer>
+  </body>
+</html>

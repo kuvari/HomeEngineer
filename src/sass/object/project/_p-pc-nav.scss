@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-pc-nav__items {
+    display: flex;
+}
+
+.p-pc-nav__item a {
+    display: inline-block;
+    padding: rem(30) rem(15);
+}
+
+.p-pc-nav__item {
+    position: relative;
+    font-size: rem(18);
+    line-height: 1.4444;
+    font-weight: $semibold;
+}
+
+.p-pc-nav__item::after {
+    content: "";
+    display: inline-block;
+    width: rem(24);
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    bottom: rem(22);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+    display: none;
+}
+
+.p-pc-nav__item:hover::after {
+    display: block;
+}
