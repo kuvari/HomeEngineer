@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-mainviual__container {
+    color: $white;
+    text-align: center;
+}
+
+.p-mainviual__title {
+    font-size: rem(24);
+}
+
+.p-overview__contents {
+    font-size: rem(18);
+}
