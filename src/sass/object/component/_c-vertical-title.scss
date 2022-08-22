@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.c-vertical-title {
+    display: inline-block;
+    color: #EBEBEB;
+    font-size: rem(120);
+    line-height: 1.325;
+    // フォントファミリー未設定
+    @include mq('md') {
+        font-size: rem(347);
+        line-height: 1.3285;
+        top: rem(600);
+        right: -40%;
+    }
+}

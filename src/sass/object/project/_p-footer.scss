@@ -1,5 +1,56 @@
 @use "global" as *;
 
+// *{
+//     outline: 2px red solid;
+// }
+.p-footer {
+    background-image: url(/images/common/footer_bg.jpg);
+    padding-top: rem(70);
+    border-top: rem(10) solid $black;
+    position: relative;
+    z-index: -1;
+    overflow: hidden; //やむを得ずhidden
+    @include mq('md') {
+        padding-top: rem(73);
+        border-top: rem(20) solid $black;
+    }
+}
+.p-footer::before {
+    display: block;
+    content: "";
+    width: rem(348);
+    height: rem(330);
+    background-image: url(/images/common/sakura02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: rem(150);
+    left: rem(-30);
+    z-index: 1;
+    @include mq('md') {
+        bottom: rem(20);
+        left: rem(-50);
+    }
+}
+
+.p-footer::after {
+    display: block;
+    content: "";
+    width: rem(500);
+    height: rem(330);
+    background-image: url(/images/common/sakura01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: rem(50);
+    right: rem(-65);
+    z-index: 1;
+    @include mq('md') {
+    right: 0;
+
+}
+}
+
 .p-footer__logo {
     max-width: rem(212);
     width: 100%;
