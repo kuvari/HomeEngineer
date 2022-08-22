@@ -5,11 +5,6 @@
     color: #EBEBEB;
     font-size: rem(120);
     line-height: 1.325;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: rem(200);
-    right: -50%;
-    z-index: -2;
     // フォントファミリー未設定
     @include mq('md') {
         font-size: rem(347);
