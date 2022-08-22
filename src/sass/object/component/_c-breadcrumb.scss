@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-breadcrumb{
+  display: block;
+  background: transparent;
+}
+.c-breadcrumb{
+display: flex;
+flex-direction: row;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.c-breadcrumb li{
+font-size: rem(18);
+font-weight: $semibold;
+}
+.c-breadcrumb li::after{
+  content: ">";
+  padding: 0 rem(5);
+  font-size: rem(10);
+  font-weight: $extrabold;
+  position: relative;
+  top: rem(-2);
+}
+  .c-breadcrumb li:last-child::after{
+content: "";
+}
+.c-breadcrumb li a:hover{
+opacity: 0.8;
+}
