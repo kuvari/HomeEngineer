@@ -1,0 +1,27 @@
+@use "global" as *;
+.p-overview{
+  padding: rem(60) 0 rem(70);//bg実装時削除?
+}
+.p-overview__container{
+  width: 50%;
+  position: relative;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.p-overview__block{
+  margin-left: rem(5);
+  color: $white;
+}
+.p-overview__company{
+  font-size: rem(32);
+  font-weight: $medium;
+  // color: inherit;
+}
+.p-overview__info{
+  margin-top: rem(30);
+  font-size: rem(18);
+  font-weight: $medium;
+  // color: inherit;
+}

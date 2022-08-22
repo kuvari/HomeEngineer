@@ -286,7 +286,7 @@
 }
 
 .c-top-content-title__block05 {
-    padding-left: 37.2654%;
+    padding-left: 30%;
     @include mq('md') {
         margin-top: rem(-20);
     }
@@ -296,7 +296,6 @@
     font-size: rem(48);
     font-weight: $semibold;
     line-height: 1.4791;
-    // left: rem(-24);
     @include mq('md') {
         font-size: rem(103);
         line-height: 1.4757;

@@ -1,5 +1,36 @@
 @use "global" as *;
 
+
+.p-top-content {
+    position: relative;
+    background-image: url(/images/common/content_bg.jpg);
+    z-index: -100;
+    overflow: hidden;  //hiddenやむを得ず
+}
+
+.p-top-content__vertical-title-a {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: rem(200);
+    right: -50%;
+    z-index: -2;
+    @include mq('md') {
+        top: rem(600);
+        right: -40%;
+    }
+}
+
+.p-top-content__vertical-title-b {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: rem(1000);
+    left: -90%;
+    z-index: -2;
+    @include mq('md') {
+        bottom: rem(500);
+        left: -70%;
+    }
+}
 .p-top-content__inner {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
