@@ -5,7 +5,7 @@
     color: #EBEBEB;
     font-size: rem(120);
     line-height: 1.325;
-    // フォントファミリー未設定
+    font-family: 'playlist Script', serif;
     @include mq('md') {
         font-size: rem(347);
         line-height: 1.3285;

@@ -11,7 +11,11 @@
                 <span class="p-menu-btn__text">menu</span>
             </a>
         </div>
-        <%- include('./_p-pc-nav') %>
+        <nav class="p-header__nav u-desktop">
+            <%- include('./_p-pc-nav') %>
+        </nav>
     </div>
-    <%- include('./_p-sp-nav') %>
+    <nav class="p-header__sp-nav">
+        <%- include('./_p-sp-nav') %>
+    </nav>
 </div>
