@@ -1,15 +1,20 @@
 @use "global" as *;
 
+// @font-face {
+//     font-family: "Playlist";
+//     src: url(PlaylistScript.otf) format("otf");
+// }
+
 .c-vertical-title {
     display: inline-block;
-    color: #EBEBEB;
-    font-size: rem(120);
-    line-height: 1.325;
-    font-family: 'playlist Script', serif;
+    // color: #EBEBEB;
+    // font-size: rem(120);
+    // line-height: 1.325;
+    // font-family: 'playlist', serif;
     @include mq('md') {
         font-size: rem(347);
-        line-height: 1.3285;
-        top: rem(600);
-        right: -40%;
+        // line-height: 1.3285;
+        // top: rem(600);
+        // right: -40%;
     }
 }

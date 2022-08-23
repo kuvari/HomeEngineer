@@ -28,9 +28,9 @@
     background-image: url(/images/common/sakura04.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
     position: absolute;
     top: 0;
-    // right: ;
     left: 0;
     z-index: -1;
     @include mq('md') {
@@ -68,11 +68,9 @@
     font-size: rem(34);
     line-height: 1.0588;
     font-weight: $extrabold;
-    margin-top: rem(35);
     padding-left: rem(40);
     padding-right: rem(40);
     @include mq('md') {  
-        margin-top: rem(65);
         padding-left: rem(100);
         padding-right: rem(100);
     }
