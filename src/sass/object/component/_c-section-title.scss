@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-section-title__ja {
+    font-size: rem(60);
+    color: $white;
+}
+
+.c-section-title__en {
+    font-size: rem(138);
+    color: #898989;
+}
