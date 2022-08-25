@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-card__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.5rem;
+    }
+}

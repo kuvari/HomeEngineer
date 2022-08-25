@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.body {
-    color: $white;
-}
-
 .p-blog-card__title,
 .p-blog-card__text,
 .p-blog-card__category,
@@ -54,16 +50,6 @@
 .p-blog-card {
     display: block;
     background-color: #646157;
-}
-
-.p-card__list {
-    // display: flex;
-    // flex-wrap: wrap;
-    @include mq(md) {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2.5rem;
-    }
 }
 
 // .p-card-list__item {

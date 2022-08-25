@@ -8,9 +8,10 @@
 
     <section class="p-blog">
         <%- include('./common/_p-blog') %>
-        <% for (var i=0; i < 4; i++) { %>
+
+        <%- include('./project/_p-p-card__list') %>
+        
         <%- include('./project/_p-card') %>
-        <% } %>
 
         <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
     </section>
