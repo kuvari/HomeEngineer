@@ -2,14 +2,32 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
+    <header class="l-header">
+      <%- include('./project/_p-header') %>
+    </header>
+    
+    <section class="p-hero">
+      <%- include('./project/_p-hero') %>
+    </section>
 
-      <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
-      
-      
-      <% for (var i=0; i < 4; i++) { %>
-        <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
-        <% } %>
-        
-        
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
+
+    <section class="p-upsdelight c-halfview">
+      <%- include('./project/_p-upsdelight') %>
+    </section>
+
+    <section class="p-overview c-halfview">
+      <%- include('./project/_p-overview') %>
+    </section>
+
+    <section class="l-top-greeting">
+      <%- include('./project/_p-top-greeting') %>
+    </section>
+    
+    <footer class="l-footer">
+      <%- include('./project/_p-footer') %>
+    </footer>
   </body>
 </html>
