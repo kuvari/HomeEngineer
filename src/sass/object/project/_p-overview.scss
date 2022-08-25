@@ -1,14 +1,25 @@
 @use "global" as *;
 .p-overview{
-  padding: rem(60) 0 rem(70);//bg実装時削除?
+  background-image: url(../images/common/map.jpg);
+  background-size: cover;
+  padding-top: 70%;
+  @include mq("md"){
+    padding: rem(60) 0 rem(70);
+  }
 }
 .p-overview__container{
-  width: 50%;
-  position: relative;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
+  background-color: rgba(0,0,0,.5);
+  padding: 0 rem(20);
+  @include mq("md"){
+    background-color: initial;
+    padding: initial;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
 }
 .p-overview__block{
   margin-left: rem(5);
