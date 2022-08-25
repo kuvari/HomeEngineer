@@ -9,6 +9,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 .p-hero__img{
   position: relative;
@@ -17,6 +18,7 @@
 .p-hero__img::before{
   content: "";
   display: block;
+  background-color: #E5E1C8;
   padding-top: 100vh;
   @include mq("md"){
     padding-top: calc((2158 / 3840) * 100%);
@@ -31,4 +33,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }

@@ -3,5 +3,6 @@ src/node_modules/
 twentytwentyone/
 package-lock.json/
 /.DS_Store/
-dist
 WordPressTheme/assets
+dist/*
+!Playlist-Free-Font
