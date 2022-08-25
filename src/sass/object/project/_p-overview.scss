@@ -9,7 +9,7 @@
 }
 .p-overview__container{
   background-color: rgba(0,0,0,.5);
-  padding: 0 rem(20);
+  padding: rem(70) rem(40) rem(80);
   @include mq("md"){
     background-color: initial;
     padding: initial;
@@ -26,13 +26,20 @@
   color: $white;
 }
 .p-overview__company{
-  font-size: rem(32);
+  font-size: rem(28);
   font-weight: $medium;
+  @include mq("md"){
+    font-size: rem(32);
+  }
   // color: inherit;
 }
 .p-overview__info{
-  margin-top: rem(30);
-  font-size: rem(18);
+  font-size: rem(16);
   font-weight: $medium;
+  margin-top: rem(26);
+  @include mq("md"){
+    font-size: rem(18);
+    margin-top: rem(19);
+  }
   // color: inherit;
 }
