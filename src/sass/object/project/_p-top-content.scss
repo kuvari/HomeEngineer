@@ -14,6 +14,7 @@
     right: -15%;
     z-index: -2;
     max-width: rem(206);
+    width: 100%;
     @include mq('md') {
         max-width: rem(517);
         top: rem(250);
@@ -23,14 +24,15 @@
 
 .p-top-content__vertical-title-b {
     position: absolute;
-    bottom: rem(-67);
+    bottom: rem(800);
     left: -12%;
     z-index: -2;
     max-width: rem(179);
+    width: 100%;
     @include mq('md') {
         max-width: rem(517);
-        bottom: rem(350);
-        left: -4%;
+        bottom: rem(-200);
+        left: -10%;
     }
 }
 
@@ -117,7 +119,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: left;
-        margin-top: rem(-100);
+        margin-top: rem(-200);
         position: relative;
         z-index: -1;
     }
@@ -168,8 +170,9 @@
 .p-top-content__text-block {
     @include mq('md') {
         max-width: rem(486);
+        width: 100%;
         margin-left: auto;
-        margin-top: rem(-100);
+        margin-top: rem(-300);
     }
 }
 
@@ -194,15 +197,16 @@
     left: rem(-20);
 }
 
-.p-top-content__quotation::after {
-    display: block;
-    content: "“";
-    font-size: rem(116);
-    color: #B5B5B5;
-    position: absolute;
-    bottom: rem(-130);
-    right: rem(-20);
-}
+// 付け忘れ？なしで良い？
+// .p-top-content__quotation::after {
+//     display: block;
+//     content: "“";
+//     font-size: rem(116);
+//     color: #B5B5B5;
+//     position: absolute;
+//     bottom: rem(-130);
+//     right: rem(-20);
+// }
 
 .p-top-content__text-b {
     font-size: rem(18);

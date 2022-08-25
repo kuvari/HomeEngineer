@@ -1,12 +1,16 @@
 
 <div class="p-top-content">
     <div class="p-top-content__vertical-title-a">
-        <%# include('../component/_c-vertical-title',{img:'./src/images/common/CodeUps.png'}) %>
+        <%# include('../component/_c-vertical-title',{text:'CodeUps'}) %>
         <img src="/images/common/CodeUps.png" alt="">
     </div>
     <div class="p-top-content__vertical-title-b">
         <%# include('../component/_c-vertical-title',{text:'Professional'}) %>
-        <img src="/images/common/professional.png" alt="">
+        <!-- <img src="/images/common/professional.png" alt=""> -->
+        <picture>
+            <source srcset="/images/common/professional-sp.png" media="(max-width: 768px)" /><!-- 幅768px以上なら表示 -->
+            <img src="/images/common/professional.png" alt="" />
+        </picture>
     </div>
     <div class="p-top-content__inner">
         <h2 class="p-top-content__title-a c-content-title">
@@ -16,7 +20,7 @@
         </h2>
         <div class="p-top-content__body-a">
             <div class="p-top-content__img-a">
-                <img src="" alt="">
+                <img src="/images/common/flower01.png" alt="">
             </div>
             <div class="l-top-content__text-a">
                 <p class="p-top-content__text-a">
@@ -34,7 +38,7 @@
                 </div>
             </h2>
             <div class="p-top-content__img-b">
-                <img src="" alt="">
+                <img src="/images/common/flower02.png" alt="">
             </div>
         </div>
         <div class="p-top-content__text-block">

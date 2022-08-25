@@ -1,7 +1,19 @@
 @use "global" as *;
 
+// 画像の場合のCSS
+// .c-vertical-title {
+//     display: inline-block;
+//     @include mq('md') {
+//         font-size: rem(347);
+//     }
+// }
+
 .c-vertical-title {
     display: inline-block;
+    transform: rotate(-90deg);
+    font-size: rem(138);
+    color: #EBEBEB;
+    font-family: 'Playlist-Free-Font';
     @include mq('md') {
         font-size: rem(347);
     }
