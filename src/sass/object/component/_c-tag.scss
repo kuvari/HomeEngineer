@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-blog-card__tag-items
+{
+    color: $white;
+    background-color: $black;
+    padding: rem(0.6) rem(0.5);
+    line-height: 1;
+}
+
+.p-blog-card__tag-item {
+    font-size: rem(18);
+    line-height: 1.85714;
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.p-blog-card__date {
+    color: $white;
+    font-size: rem(18);
+    line-height: 1.85714;
+}

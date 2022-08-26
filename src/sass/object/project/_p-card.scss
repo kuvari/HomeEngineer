@@ -1,10 +1,7 @@
 @use "global" as *;
 
 .p-blog-card__title,
-.p-blog-card__text,
-.p-blog-card__category,
-.p-blog-card__sub-category,
-.p-blog-card__date
+.p-blog-card__text
 {
     color: $white;
 }
@@ -15,10 +12,7 @@
     line-height: 1.94;
 }
 
-.p-blog-card__text,
-.p-blog-card__category,
-.p-blog-card__sub-category,
-.p-blog-card__date
+.p-blog-card__text
 {
     font-size: rem(18);
     line-height: 1.85714;
@@ -28,14 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.p-blog-card__category,
-.p-blog-card__sub-category
-{
-    background-color: $black;
-    padding: rem(0.6) rem(0.5);
-    line-height: 1;
 }
 
 .p-blog-card__body {

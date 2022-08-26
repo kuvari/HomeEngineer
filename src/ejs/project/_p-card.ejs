@@ -4,9 +4,14 @@
                 <img src="" alt="">
             </figure>
             <div class="p-blog-card__info">
-                <time class="p-blog-card__date" datetime="2021-12-31">12月31日</time>
-                <div class="p-blog-card__category">Coding</div>
-                <div class="p-blog-card__sub-category">Coding</div>
+                <%- include ('./component/_c-date',{datetime: '12-31', date:'12月31日'}) %>
+                <div class="p-blog-card__tag-items">
+                    <% for (var i=0; i < 4; i++) { %>
+                    <div class="p-blog-card__tag-item">
+                        <%- include ('./component/_c-tag',{text: 'Coding'}) %>
+                    </div>
+                        <% } %>
+                </div>
             </div>
             <div class="p-blog-card__body">
                 <h3 class="p-blog-card__title">写真コミュニティ「Comodo」テキストが入ります</h3>
