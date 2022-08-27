@@ -1,8 +1,19 @@
 <div class="p-contact">
-    <div class="p-contact__text-wrapper">
-        <%- include('../component/_c-contact-text',{text:'サイト制作依頼や CodeUps のサービスについてお聞きしたいことがざいましたらお気軽にお問い合わせください。お問い合わせ頂いてから約3営業日以内に回答させていただきます。'}) %>
+    <div class="p-contact__inner l-inner">
+        <div class="l-contact__text-block1">
+            <%- include('../component/_c-contact-text',{text:'サイト制作依頼や CodeUps のサービスについてお聞きしたいことがざいましたらお気軽にお問い合わせください。お問い合わせ頂いてから約3営業日以内に回答させていただきます。'}) %>
         </div>
-        <div class="p-contact__text-wrapper">
-        <%- include('../component/_c-contact-text',{text:'Code Ups のサービスにつきましては LINE から受け付ておりますのでLINE にご登録の上お問い合わせください。'}) %>
+        <div class="l-contact-form">
+            <%- include('../project/_p-contact-form') %>
+        </div>
+        <div class="l-contact__text-block2">
+            <%- include('../component/_c-contact-text',{text:'Code Ups のサービスにつきましては LINE から受け付ておりますのでLINE にご登録の上お問い合わせください。'}) %>
+        </div>
+        <div class="p-contact__logo">
+            <%- include('../component/_c-logo-blue',{link:'#'}) %>
+        </div>
+        <div class="p-contact__btn">
+            <%- include('../component/_c-btn2',{text:'LINEから申し込み'}) %>
+        </div>
     </div>
 </div>
