@@ -36,6 +36,10 @@
 .p-blog-card {
     display: block;
     background-color: #646157;
+    a {
+        text-decoration: none;
+        transition: opacity 0.3s;
+    }
 }
 
 // .p-card-list__item {
