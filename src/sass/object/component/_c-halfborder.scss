@@ -9,15 +9,13 @@
 .c-halfborder__title{
   @include mq("md"){
     width: 50%;
-    border-right: rem(1) solid #000000; /*線の設定*/
-    display: flex;
-    justify-content: end;
     text-align: left;
   }
 }
 .c-halfborder__title p{
   @include mq("md"){
     width: 20%;
+    border-right: rem(1) solid #000000; /*線の設定*/
   }
 }
 

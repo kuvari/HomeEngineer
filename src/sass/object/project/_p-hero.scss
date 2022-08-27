@@ -3,6 +3,7 @@
 .p-hero{
   position: relative;
   border-bottom: rem(20) solid $black;
+  z-index: -1;
 }
 .p-hero__info{
   width: 100%;

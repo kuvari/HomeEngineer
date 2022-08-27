@@ -1,36 +1,17 @@
 <div class="p-greeting-content">
-	<% if(!title == "" ) { %>
 		<div class="p-greeting-content__title-wrap">
 			<h3 class="p-greeting-content__title"><%= title %></h3>
 		</div>
-	<% } %>
-
-    <div class="p-greeting-content__subtitle-wrap">
+	    <div class="p-greeting-content__subtitle-wrap">
         <h3 class="p-greeting-content__subtitle"><%= subtitle %></h3>
     </div>
     <div class="p-greeting-content__text-wrapper">
         <p class="p-greeting-content__text"><%= text1 %></p>
-		<% if(!text2 == "" ) { %>
 		<p class="p-greeting-content__text"><%= text2 %></p>
-		<% } %>
-		<% if(!text3 == "" ) { %>
 		<p class="p-greeting-content__text"><%= text3 %></p>
-		<% } %>
-		<% if(!boss == "" ) { %>
 		<div class="p-greeting-content__block">
             <p class="p-greeting-content__post"><%= boss %></p>
             <p class="p-greeting-content__name"><%= name %></p>
         </div>
-		<% } %>
-		<% if(!link1 == "" ) { %>
-		<ul class="p-greeting-content__block">
-			<li class="p-greeting-content__link"><a href=""><%= link1 %></a></li>
-			<li class="p-greeting-content__link"><a href=""><%= link2 %></a></li>
-			<li class="p-greeting-content__link"><a href=""><%= link3 %></a></li>
-			<li class="p-greeting-content__link"><a href=""><%= link4 %></a></li>
-			<li class="p-greeting-content__link"><a href=""><%= link5 %></a></li>
-		</ul>
-		<% } %>
-	
     </div>
 </div>

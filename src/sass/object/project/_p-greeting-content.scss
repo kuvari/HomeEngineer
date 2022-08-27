@@ -20,7 +20,17 @@
         padding-right: rem(100);
     }
 }
-
+// 404ページ用
+.p-greeting-content__subtitle--404{
+    display: inline-block;
+    font-size: rem(40);
+    line-height: 1.0588;
+    font-weight: $semibold;
+    padding: initial;
+    @include mq('md') {  
+        padding: initial;
+    }
+}
 .p-greeting-content__text-wrapper {
     margin-top: rem(40);
     max-width: 80%;
