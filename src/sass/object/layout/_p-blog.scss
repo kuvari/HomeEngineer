@@ -1,8 +1,12 @@
 @use "global" as *;
 
-.l-blog {
+.p-blog {
     margin-top: rem(20);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(17, 17, 17, 0.4);
+    @include mq(md) {
+        padding-bottom: rem(411);
+        padding-top: rem(356);
+    }
 }
 
 .p-blog__inner {
