@@ -8,10 +8,18 @@
 }
 
 .l-contact__text-block2 {
+    margin-top: rem(80);
+    @include mq('md') {
+        margin-top: initial;
+    }
+}
+
+.l-contact__text-block2 .c-contact-text {
     padding-top: rem(65);
     border-top: rem(2) solid #707070;
     @include mq('md') {
-        margin-top: initial;
+        padding-top: initial;
         border-top: initial;
     }
+
 }
