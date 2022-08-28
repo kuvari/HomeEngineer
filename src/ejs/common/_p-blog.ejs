@@ -1,5 +1,7 @@
 <div class="p-blog__inner l-inner">
-    <div class="p-blog__list">
-        <%- include('./project/p-card__list') %>
+    <div class="p-card__list">
+        <% for (var i=0; i < 3; i++) { %>
+        <%- include('./project/p-card') %>
+        <% } %>
     </div>
 </div>

@@ -42,6 +42,16 @@
     }
 }
 
+.p-card__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.5rem;
+    }
+}
+
 // .p-card-list__item {
 //     max-width: calc(33.3333% - rem(2.5) * 2 / 3);
 //     width: 100%;
