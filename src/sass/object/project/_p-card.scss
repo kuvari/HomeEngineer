@@ -12,8 +12,12 @@
     line-height: 1.94;
 }
 
-.p-blog-card__text
-{
+.p-blog-card__title:first-letter {
+    font-size: rem(40);
+    line-height: 1;
+}
+
+.p-blog-card__text {
     font-size: rem(18);
     line-height: 1.85714;
 }
