@@ -25,7 +25,9 @@
 }
 
 .p-blog-card__body {
-    padding: rem(0.4) rem(2.4) rem(1.5);
+    @include mq (md) {
+        padding: rem(0.4) rem(2.4) rem(1.5);
+    }
 }
 
 .p-blog-card__info,
@@ -76,8 +78,27 @@
     }
 }
 
+//　比率の違う画像を入れてもリサイズされる
+
 .p-blog-card__img {
-    aspect-ratio: 350 / 233;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include mq(md) {
+        max-width: rem(557);
+        width: 100%;
+    }
+}
+
+.p-blog-card__img::before {
+    content: "";
+    display: block;
+    padding-top: 66.57%;
+
+    @include mq(md) {
+        padding-top: 66.58%;
+    }
 }
 
 .p-blog-card__img img {
