@@ -6,6 +6,9 @@
     background-color: $black;
     padding: rem(0.6) rem(0.5);
     line-height: 1;
+    @include mq(md) {
+        display: flex;
+    }
 }
 
 .p-blog-card__tag-item {
