@@ -1,15 +1,18 @@
 @use "global" as *;
 
 .p-mainviual__container {
+    background-image: url(/images/common/mainvisual_bg.png);
     color: $white;
-    text-align: center;
     background-color: $black;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .p-mainviual__title {
     font-size: rem(24);
 }
 
-.p-overview__contents {
+.p-mainvisual__contents {
     font-size: rem(18);
 }
