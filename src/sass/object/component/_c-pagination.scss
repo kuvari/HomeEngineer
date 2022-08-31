@@ -1,0 +1,67 @@
+@use "global" as *;
+
+
+.c-pagination__inner {
+    max-width: rem(764);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-pagination__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-pagination__item {
+    font-size: rem(16);
+    font-weight: $semibold;
+    display: inline-block;
+    background-color: #EAE4C9;
+    padding: rem(13) rem(20);
+    margin: 0 rem(10);
+    border: 1px solid #8E8A78;
+}
+
+.c-pagination__item--next a,
+.c-pagination__item--prev a{
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.c-pagination__item--next {
+    background-color: transparent;
+    border: none;
+    margin-right: rem(48);
+    padding: 0;
+    @include mq('md') {
+        margin-right: rem(30);
+        padding: rem(13) rem(20);
+    }
+}
+
+.c-pagination__item--prev {
+    background-color: transparent;
+    border: none;
+    margin-left: rem(48);
+    padding: 0;
+    @include mq('md') {
+        margin-left: rem(30);
+        padding: rem(13) rem(20);
+    }
+}
+
+.c-pagination__item:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    transition: .3s;
+}
+
+.c-pagination__item--page {
+    display: none;
+    @include mq('md') {
+        display: block;
+    }
+}

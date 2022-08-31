@@ -1,16 +1,32 @@
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body class="l-maxinner">
+  <body>
+    <header class="l-header">
+      <%- include('./project/_p-header') %>
+    </header>
+    
+    <section class="p-hero">
+      <%- include('./project/_p-hero') %>
+    </section>
 
-  <section class="l-mainvisual">
-      <%- include('./project/_p-mainvisual') %>
-  </section>
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
 
-  <section class="p-blog">
-      <%- include('./common/_p-blog') %>
+    <section class="p-upsdelight c-halfview">
+      <%- include('./project/_p-upsdelight') %>
+    </section>
 
-      <%- include('./component/_c-btn',{text:'MORE', link:'#'}) %>
-  </section>
+    <section class="p-overview c-halfview">
+      <%- include('./project/_p-overview') %>
+    </section>
 
+    <section class="l-top-greeting">
+      <%- include('./project/_p-top-greeting', {status:'top'}) %>
+    </section>
+    
+    <footer class="l-footer">
+      <%- include('./project/_p-footer') %>
+    </footer>
   </body>
 </html>

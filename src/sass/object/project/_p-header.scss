@@ -3,6 +3,14 @@
 .p-header {
     height: rem(89);
     background-color: transparent;
+    padding-top: rem(10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include mq('md') {
+        padding-top: rem(20);
+    }
 }
 
 .p-header__inner {

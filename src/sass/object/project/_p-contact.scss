@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-contact {
+    // background-image: url(/images/common/bg01.jpg);
+}
+.p-contact__text-block1 {
+   
+}
+
+.p-contact__text-block2 {
+    
+}
+
+.p-contact__logo {
+    width: rem(160);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(40);
+    @include mq('md') {
+        margin-top: rem(70);
+        }
+}
+
+.p-contact__btn {
+    margin-top: rem(40);
+    text-align: center;
+    @include mq('md') {
+    margin-top: rem(49);
+    }
+}

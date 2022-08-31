@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.p-contact-form__items {
+    @include mq('md') {
+        max-width: rem(574);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.p-contact-form__input {
+    display: block;
+    border: 1px solid #9A9A9A;
+    font-size: rem(14);
+    font-weight: $semibold;
+    line-height: 1.4286;
+    color: #A8A8A8;
+    padding: rem(10) rem(16);
+    max-width: rem(248);
+    width: 100%;
+    @include mq('md') {
+        max-width: rem(248);
+    }
+}
+
+.p-contact-form__label {
+    color: $black;
+}
+
+.p-contact-form__textarea {
+    display: block;
+    border: 1px solid #9A9A9A;
+    font-size: rem(14);
+    font-weight: $semibold;
+    line-height: 1.4286;
+    color: #A8A8A8;
+    padding: rem(10) rem(16);
+    max-width: rem(248);
+    width: 100%;
+    @include mq('md') {
+        max-width: rem(248);
+    }
+}

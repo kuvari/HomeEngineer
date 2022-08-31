@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body>
-    <header class="l-header">
-      <%- include('./project/_p-header') %>
-    </header>
-
-      <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
-      
-      
-      <% for (var i=0; i < 4; i++) { %>
-        <%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
-        <% } %>
-        
-        <section class="l-top-content">
-          <%- include('./project/_p-top-content') %>
-        </section>
-        
-        <%- include('./project/_p-top-greeting') %>
-        
-        <footer class="l-footer">
-          <%- include('./project/_p-footer') %>
-        </footer>
-  </body>
+	<body>
+		<header class="l-header">
+			<%- include('./project/_p-header') %>
+		</header>
+		<%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+		
+		
+		<% for (var i=0; i < 4; i++) { %>
+		<%# include('./component/_c-btn',{text:'MORE', link:'#'}) %>
+		<% } %>
+		
+		<section class="l-top-content">
+			<%- include('./project/_p-top-content') %>
+		</section>
+		
+		<section class="l-top-greeting">
+			<%- include('./project/_p-top-greeting', {status:'top'}) %>
+		</section>
+		
+		<footer class="l-footer">
+			<%- include('./project/_p-footer') %>
+		</footer>
+		<div class="l-pagination">
+			<%- include('./component/_c-pagination') %>
+		</div>
+		<div class="l-contact">
+			<%- include('./project/_p-contact') %>
+			<%- include('./project/_p-contact-form') %>
+		</div>
+	</body>
 </html>
