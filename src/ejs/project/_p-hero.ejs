@@ -2,7 +2,8 @@
   <%- include('../component/_c-info',{left:'info', center:'公式サイト公開', right:'more', date:'2022年8月1日', link:'#'}) %>
 </div>
 <div class="p-hero__img">
-  <!-- <source srcset="./images/common/top-sumple1.jpeg" media="(min-width:520px)" type=""> -->
-  <!-- <source srcset="../../images/common/top-sumple1.jpeg" media="(min-width:1040px)"> -->
-  <img src="./images/common/top-sumple.png" alt="">
+  <picture>
+    <source srcset="./images/common/top-sumple.png" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+    <img src="./images/common/sp-top-sumple.png" alt="" />
+  </picture>
 </div>

@@ -17,13 +17,17 @@
     position: relative;
     left: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
   }
 }
 .p-overview__block{
-  margin-left: rem(5);
   color: $white;
+  margin-top: rem(30);
+  @include mq("md"){
+    margin-left: rem(5);
+  }
 }
 .p-overview__company{
   font-size: rem(28);
