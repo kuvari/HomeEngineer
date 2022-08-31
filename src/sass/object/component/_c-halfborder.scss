@@ -15,18 +15,32 @@
 .c-halfborder__title p{
   @include mq("md"){
     width: 20%;
-    border-right: rem(1) solid #000000; /*線の設定*/
+  // border-right: rem(1) solid #000000; /*線の設定*/
   }
 }
 
 .c-halfborder__text{
   margin-left: rem(20);
   padding-left: rem(20);
-  border-left: rem(1) solid #000000; /*線の設定*/
+  // border-left: rem(1) solid #000000;
+  position: relative;
   @include mq("md"){
     width: 50%;
-    border-left: initial;
     padding-left: initial;
+    // border-left: initial;
+  }
+}
+.c-halfborder__text::before{
+  content: "";
+  display: block;
+  background-color: $black;
+  height: rem(30);
+  width: rem(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include mq("md"){
+    left: rem(-30);
   }
 }
 
