@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-achievement {
+    margin-top: rem(20);
+    background-color: $white;
+    @include mq(md) {
+        padding-bottom: rem(43.1);
+        padding-top: rem(50.9);
+    }
+}

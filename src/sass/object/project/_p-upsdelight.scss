@@ -112,16 +112,20 @@
   }
 }
 .p-upsdelight__l-text{
-  width: 70%;
   background-color: rgba(255,255,255,0.3);
+  width: 70%;
+  margin-top: rem(32);
   @include mq("md"){
     width: initial;
+    margin-top: initial;
   }
 }
 .p-upsdelight__r-text{
   width: 70%;
+  margin-top: rem(32);
   @include mq("md"){
     width: initial;
+    margin-top: initial;
   }
 }
 .p-upsdelight__container::before{
