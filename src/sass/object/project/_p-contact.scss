@@ -10,6 +10,12 @@
     }   
 }
 
+.p-contact__inner {
+    @include mq('md') {
+        display: flex;
+    }
+}
+
 .p-contact__text-block1 {
     margin-top: rem(42);
     @include mq('md') {
@@ -26,12 +32,6 @@
     }
 }
 
-.p-contact__inner {
-    @include mq('md') {
-        display: flex;
-    }
-}
-
 .p-contact__top-left {
     padding-bottom: rem(80);
     @include mq('md') {
@@ -44,6 +44,13 @@
 .p-contact__bottom-right {
     @include mq('md') {
         padding-left: rem(60);
+    }
+}
+
+.p-contact__form {
+    margin-top: rem(65);
+    @include mq('md') {
+        margin-top: rem(62);
     }
 }
 
