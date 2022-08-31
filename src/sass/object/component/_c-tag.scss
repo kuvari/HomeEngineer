@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-tag{
+  font-size: rem(16);
+}
+.c-tag{
+  font-size: inherit;
+  color: $white;
+  display: inline-block;
+  padding: rem(4) rem(10);
+  background-image: url(../images/common/tag_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

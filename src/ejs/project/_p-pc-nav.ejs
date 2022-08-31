@@ -1,9 +1,14 @@
-<nav class="p-header__nav p-pc-nav u-desktop">
+<div class="p-pc-nav">
     <ul class="p-pc-nav__items">
-        <li class="p-pc-nav__item"><a href="#">トップ</a></li>
+        <!-- <li class="p-pc-nav__item"><a href="#">トップ</a></li>
         <li class="p-pc-nav__item"><a href="#">お知らせ</a></li>
         <li class="p-pc-nav__item"><a href="#">ブログ</a></li>
         <li class="p-pc-nav__item"><a href="#">政策実績</a></li>
-        <li class="p-pc-nav__item"><a href="#">お問い合わせ</a></li>
+        <li class="p-pc-nav__item"><a href="#">お問い合わせ</a></li> -->
+        <li class="p-pc-nav__item"><%- include('../component/_c-nav-link',{link:'index.html', text:'トップ'}) %></li>
+        <li class="p-pc-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'お知らせ'}) %></li>
+        <li class="p-pc-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'ブログ'}) %></li>
+        <li class="p-pc-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'制作実績'}) %></li>
+        <li class="p-pc-nav__item"><%- include('../component/_c-nav-link',{link:'contact.html', text:'お問い合わせ'}) %></li>
     </ul>
-</nav>
+</div>

@@ -1,9 +1,10 @@
 <div class="p-header">
     <div class="p-header__inner l-inner">
         <div class="p-header__logo">
-            <a href="#">
+            <%- include('../component/_c-logo',{link:'index.html',alt:'CodeUpsロゴ画像'}) %>
+            <!-- <a href="#">
                 <img src="images/common/logo.svg" alt="ロゴ画像">
-            </a>
+            </a> -->
         </div>
         <div class="p-header__menu-btn p-menu-btn u-mobile js-nav">
             <a href="#">
@@ -11,7 +12,11 @@
                 <span class="p-menu-btn__text">menu</span>
             </a>
         </div>
-        <%- include('./_p-pc-nav') %>
+        <nav class="p-header__nav u-desktop">
+            <%- include('./_p-pc-nav') %>
+        </nav>
     </div>
-    <%- include('./_p-sp-nav') %>
+    <nav class="p-header__sp-nav">
+        <%- include('./_p-sp-nav') %>
+    </nav>
 </div>
