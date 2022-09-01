@@ -33,9 +33,9 @@ const navItems = [
     {link:'contact.html', text:'お問い合わせ'},
 ]
 %> 
-    <ul class="p-pc-nav__items">
-        <% for (var navItem of navItems) {%>
-            <li class="p-pc-nav__item"><%= navItem{'link','text'} %></li>
-        <% } %>
-    </ul>
+<ul class="p-pc-nav__items">
+<% for (var navItem of navItems) {%>
+    <li class="p-pc-nav__item"><%# navItem{'link','text'} %></li>
+    <% } %>
+</ul>
 </div>
