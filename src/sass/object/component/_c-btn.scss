@@ -7,6 +7,7 @@
   color: #BEA621;
   display: inline-block;
   text-align: center;
+  width: 100%;
   @include mq(md) {
     font-size: rem(24);
     padding: rem(24) rem(23);
