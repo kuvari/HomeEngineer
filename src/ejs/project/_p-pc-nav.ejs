@@ -6,36 +6,18 @@
         <!-- <li class="p-pc-nav__item"><%# include('../component/_c-nav-link',{link:'#', text:'制作実績'}) %></li> -->
         <!-- <li class="p-pc-nav__item"><%# include('../component/_c-nav-link',{link:'contact.html', text:'お問い合わせ'}) %></li> -->
 <!-- </ul> -->
-
-
-
-
-
-
-    <%# 
-const overviewLists=[
-    { category:"会社名", text:"株式会社CodeUps" },
-    { category:"設立", text:"テキストが入ります。" },
-    { category:"資本金", text:"テキストが入ります。" },
-    { category:"売上高", text:"テキストが入ります。" },
-    { category:"代表者", text:"テキストが入ります。" },
-    { category:"従業員数", text:"テキストが入ります。" },
-    { category:"事業内容", text:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。" },
-    { category:"所在地", text:"東京都" },
-    
-] %> 
-<% 
-const navItems = [
-    {link:'index.html', text:'トップ'},
-    {link:'#', text:'お知らせ'},
-    {link:'#', text:'ブログ'},
-    {link:'#', text:'制作実績'},
-    {link:'contact.html', text:'お問い合わせ'},
-]
-%> 
-<ul class="p-pc-nav__items">
-<% for (var navItem of navItems) {%>
-    <li class="p-pc-nav__item"><%# navItem{'link','text'} %></li>
-    <% } %>
-</ul>
+    <% 
+    const navItems = [
+        {link:'index.html', text:'トップ'},
+        {link:'#', text:'お知らせ'},
+        {link:'#', text:'ブログ'},
+        {link:'#', text:'制作実績'},
+        {link:'contact.html', text:'お問い合わせ'},
+    ]
+    %> 
+    <ul class="p-pc-nav__items">
+    <% for (var navItem of navItems) {%>
+        <li class="p-pc-nav__item"><a href="<%- navItem.link %>" class="c-nav-link"><%- navItem.text %></a></li>
+        <% } %>
+    </ul>
 </div>
