@@ -3,8 +3,14 @@
 .p-achievement {
     margin-top: rem(20);
     background-color: $white;
+
     @include mq(md) {
         padding-bottom: rem(43.1);
         padding-top: rem(50.9);
+    }
+
+    @include mq(sp) {
+        width: rem(390);
+        height: rem(213);
     }
 }

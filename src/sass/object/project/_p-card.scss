@@ -59,14 +59,27 @@
 
 .p-card-list__item {
     width: 100%;
+    position: relative;
+    display: inline-block;
     @include mq(md) {
-        max-width: calc(33.3333% - rem(2.5) * 2 / 3);
+        max-width: calc(33.3333% - rem(77) * 2 / 3);
     }
+}
+
+.p-card-list__item::after {
+    content:"";
+    display: block;
+    width: rem(421);
+    height: rem(3);
+    background-color: $black;
+    position: absolute;
+    bottom: 0;
+    left: rem(10);
 }
 
 .p-card-list__item + .p-card-list__item {
     @include mq(md) {
-        margin-left: rem(2.5);
+        margin-left: rem(77);
     }
 }
 
@@ -78,7 +91,7 @@
 
 .p-card-list__item:nth-child(n + 4) {
     @include mq(md) {
-        margin-top: rem(2.5);
+        margin-top: rem(77);
     }
 }
 

@@ -7,9 +7,16 @@
   color: #BEA621;
   display: inline-block;
   text-align: center;
+
   @include mq(md) {
     font-size: rem(24);
     padding: rem(24) rem(23);
     width: rem(399);
+  }
+
+  @include mq(sp) {
+    font-size: rem(18);
+    padding: rem(21.7) rem(21.3);
+    width: rem(398);
   }
 }
