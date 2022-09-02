@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-hero-sub{
+  position: relative;;
+}
+.p-hero-sub__title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: $white;
+  font-weight: $semibold;
+  font-size: rem(30);
+  @include mq("md"){
+    font-size: rem(60);
+  }
+}
+.p-hero-sub__img{
+  position: relative;
+
+}
+.p-hero-sub__img::before{
+  content: "";
+  display: block;
+  background-color: #E5E1C8;
+  padding-top: 100vh;
+  @include mq("md"){
+    padding-top: calc((280 / 1920) * 100%);
+  }
+}
+.p-hero-sub__img picture{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}

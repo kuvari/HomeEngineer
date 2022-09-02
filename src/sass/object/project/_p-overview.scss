@@ -22,6 +22,12 @@
     z-index: 1;
   }
 }
+.p-overview__title h2{
+  color: $white;
+}
+.p-overview__title p{
+  color: #2F2F2F;
+}
 .p-overview__block{
   color: $white;
   margin-top: rem(30);
