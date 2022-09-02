@@ -29,6 +29,7 @@
 }
 
 .p-blog-card__body {
+    position: relative;
     @include mq (md) {
         padding: rem(0.4) rem(2.4) rem(1.5);
     }
@@ -44,6 +45,17 @@
     right: 0;
     width: rem(129);
     height: rem(50);
+}
+
+.p-blog-card__body::after {
+    content: "";
+    display: block;
+    width: calc(100% + rem(10));
+    height: rem(1);
+    background-color: $black;
+    position: absolute;
+    bottom: rem(-10);
+    left: rem(10);
 }
 
 .p-blog-card__info,
@@ -82,7 +94,7 @@
     content:"";
     display: block;
     width: rem(1);
-    height: calc(100% +  rem(10));
+    height: calc(100% + rem(10));
     background-color: $black;
     position: absolute;
     top: rem(10);
