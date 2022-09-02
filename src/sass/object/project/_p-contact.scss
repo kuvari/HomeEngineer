@@ -2,13 +2,65 @@
 
 .p-contact {
     // background-image: url(/images/common/bg01.jpg);
+    padding-top: rem(25);
+    padding-bottom: rem(75);
+    @include mq('md') {
+        padding-top: rem(35);
+        padding-bottom: rem(158);
+    }   
 }
+
+.p-contact__inner {
+    margin-top: rem(65);
+    @include mq('md') {
+        display: flex;
+        margin-top: rem(84);
+    }
+}
+
 .p-contact__text-block1 {
-   
+    margin-top: rem(42);
+    @include mq('md') {
+        margin-top: initial;
+    }
 }
 
 .p-contact__text-block2 {
-    
+    padding-top: rem(65);
+    border-top: rem(2) solid #707070;
+    @include mq('md') {
+        padding-top: initial;
+        border-top: initial;
+    }
+}
+
+.p-contact__top-left {
+    padding-bottom: rem(80);
+    @include mq('md') {
+        padding-right: rem(60);
+        padding-bottom: initial;
+        border-right: rem(2) solid #707070;
+    }
+}
+
+.p-contact__bottom-right {
+    @include mq('md') {
+        padding-left: rem(60);
+    }
+}
+
+.p-contact__form {
+    margin-top: rem(65);
+    @include mq('md') {
+        margin-top: rem(62);
+    }
+}
+
+.p-contact__text-wrapper {
+	max-width: rem(574);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .p-contact__logo {
@@ -25,6 +77,6 @@
     margin-top: rem(40);
     text-align: center;
     @include mq('md') {
-    margin-top: rem(49);
+    margin-top: rem(60);
     }
 }

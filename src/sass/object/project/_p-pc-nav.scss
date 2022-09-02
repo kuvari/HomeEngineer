@@ -1,7 +1,13 @@
 @use "global" as *;
 
 .p-pc-nav__items {
-    display: flex;
+    text-align: center;
+    overflow-y: scroll;
+    @include mq('md') {
+        display: flex;
+        text-align: initial;
+        overflow-y: initial;
+    }
 }
 
 .p-pc-nav__item a {
