@@ -19,9 +19,9 @@
         {link:'contact.html', text:'お問い合わせ'},
     ]
     %> 
-    <ul class="p-pc-nav__items">
+    <ul class="p-sp-nav__items">
     <% for (var navItem of navItems) {%>
-        <li class="p-pc-nav__item"><a href="<%- navItem.link %>" class="c-nav-link"><%- navItem.text %></a></li>
+        <li class="p-sp-nav__item"><a href="<% navItem.link %>" class="c-nav-link"><% navItem.text %></a></li>
         <% } %>
     </ul>
 </div>
