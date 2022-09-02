@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.c-title{
+  position: relative;
+}
+.c-title__jp{
+  font-size: rem(50);
+  font-weight: $medium;
+  @include mq("md"){
+    font-size: rem(60);
+  }
+}
+.c-title__en{
+  position: absolute;
+  left: rem(-35);
+  top: rem(-40);
+  z-index: -1;
+  font-family: $second-font-family;
+  font-size: rem(96);
+  @include mq("md"){
+    left: rem(-35);
+    top: rem(-30);  
+    font-size: rem(100);
+  }
+}
