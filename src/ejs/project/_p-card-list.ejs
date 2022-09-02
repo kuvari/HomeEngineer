@@ -1,0 +1,19 @@
+<a href="#" class="p-card-list__item p-blog-card">
+    <figure class="p-blog-card__img">
+        <img src="./images/common/blog1.jpg" alt="ブログ１" />
+    </figure>
+    <div class="p-blog-card__info">
+        <%- include ('../component/_c-date',{datetime: '12-31', date:'12月31日'}) %>
+        <div class="p-blog-card__tag-items">
+            <% for (var i=0; i < 2; i++) { %>
+            <div class="p-blog-card__tag-item">
+            <%- include ('../component/_c-tag',{tag: 'Coding'}) %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <div class="p-blog-card__body">
+        <h3 class="p-blog-card__title">写真コミュニティ「Comodo」テキストが入ります</h3>
+        <p class="p-blog-card__text">写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+    </div>
+</a>
