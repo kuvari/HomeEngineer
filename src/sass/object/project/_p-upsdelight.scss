@@ -49,7 +49,7 @@
     background-image: initial;
   }
 }
-.p-upsdelight__r{
+.p-upsidelight__right{
   color: $white;
   width: 100%;
   position: relative;
@@ -69,7 +69,7 @@
     background-image: initial;
   }
 }
-.p-upsdelight__r::before{
+.p-upsidelight__right::before{
   content: "";
   width: 100%;
   height: 100%;
@@ -95,7 +95,7 @@
     margin-left: rem(40);
   }
 }
-.p-upsdelight__r-title{
+.p-upsidelight__right-title{
   font-size: rem(42);
   font-weight: $semibold;
   width: 70%;
@@ -120,7 +120,7 @@
     margin-top: initial;
   }
 }
-.p-upsdelight__r-text{
+.p-upsidelight__right-text{
   width: 70%;
   margin-top: rem(32);
   @include mq("md"){
