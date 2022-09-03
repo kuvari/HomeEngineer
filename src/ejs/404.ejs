@@ -2,17 +2,19 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body class="l-maxinner">
-
-    <div class="p-404">
-      <%- include('./project/_p-top-greeting', {status:'404'}) %>
-    </div>
-
-    <!-- <div class="p-404__breadcrumb">
-      <%# include('./component/_c-breadcrumb',{level1:'トップページ',level2:'４０４エラー',level3:''}) %>
-    </div> -->
-
+    <section class="l-hero-sub">
+      <%- include('./project/_p-hero-sub',{title:'４０４エラー'}) %>
+    </section>
+    <section class="l-404">
+      <%- include('./project/_p-404',{
+      subtitle:'ページが見つかりませんでした',
+      text:'お探しのページは移動したか、もしくは削除された可能性がありますので以下よりページへ移動してください',
+      }) %>
+    </section>
+    
     <footer class="l-footer">
-      <%- include('./project/_p-footer') %>
-    </footer> 
+      <%- include('./project/_p-footer',{copyright:'Copyright: 合同会社 CodeUps'}) %>
+    </footer>
+
   </body>
 </html>
