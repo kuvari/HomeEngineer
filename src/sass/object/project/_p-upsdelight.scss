@@ -1,7 +1,10 @@
 @use "global" as *;
 
-// .p-upsdelight{
-// }
+.p-upsdelight{
+  @include mq("md"){
+    background: linear-gradient(to right, #fff 0%, #fff 50%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);
+  }
+}
 .p-upsdelight__container{
   position: relative;
 }
@@ -19,20 +22,7 @@
     background-position: center;
     }
 }
-// .p-upsdelight__inner::before{
-//   background-image: url(../images/common/asagao-black.png);
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   display: block;
-//   content: "";
-//   position: absolute;
-//   width: 50%;
-//   padding-top: 50%;
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-.p-upsdelight__l{
+.p-upsdelight__left{
   width: 100%;
   position: relative;
   display: flex;
@@ -82,7 +72,7 @@
     display: none;
   }
 }
-.p-upsdelight__l-title{
+.p-upsdelight__left-title{
   font-size: rem(42);
   font-weight: $semibold;
   width: 70%;
@@ -111,7 +101,7 @@
     margin-bottom: rem(-100);
   }
 }
-.p-upsdelight__l-text{
+.p-upsdelight__left-text{
   background-color: rgba(255,255,255,0.3);
   width: 70%;
   margin-top: rem(32);
