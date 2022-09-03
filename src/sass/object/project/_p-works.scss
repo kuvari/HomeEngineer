@@ -37,8 +37,10 @@
   display: inherit;
   text-transform: uppercase;
   text-align: center;
+  width: rem(300);
   margin-top: rem(60);
   @include mq("md"){
+    width: rem(410);
     margin-top: 100;
   }
 }

@@ -1,7 +1,10 @@
 @use "global" as *;
 
-// .p-upsdelight{
-// }
+.p-upsdelight{
+  @include mq("md"){
+    background: linear-gradient(to right, #fff 0%, #fff 50%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);
+  }
+}
 .p-upsdelight__container{
   position: relative;
 }

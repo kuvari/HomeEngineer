@@ -1,10 +1,16 @@
 @use "global" as *;
+
 .p-overview{
   background-image: url(../images/common/map.jpg);
   background-size: cover;
   padding-top: 70%;
   @include mq("md"){
     padding: rem(60) 0 rem(70);
+  }
+}
+.p-overview::before{
+  @include mq("md"){
+    background: linear-gradient(to right, #fff 0%, #fff 50%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);
   }
 }
 .p-overview__container{
