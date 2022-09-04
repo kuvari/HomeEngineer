@@ -58,6 +58,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
 }
 .p-works-single__images{
   background-image: url(../images/common/comodo-sub.png);
@@ -77,13 +78,20 @@
     display: flex;
     justify-content: center;
     gap: rem(281);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .p-works-single__main-left{
   @include mq("md"){
-    width: 100%;
-    display: flex;
-    justify-content: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: rem(90);
+  }
+  @include mq("xl"){
+    margin-left: rem(50);
   }
 }
 .p-works-single__main-left h2{
@@ -193,8 +201,9 @@
   }
 }
 .p-works-single__main-btn{
-  margin-top: rem(60);
   text-align: center;
+  text-transform: uppercase;
+  margin-top: rem(60);
   @include mq("md"){
     margin-top: rem(64);
   }

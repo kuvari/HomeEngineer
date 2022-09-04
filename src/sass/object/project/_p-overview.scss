@@ -8,9 +8,23 @@
     padding: rem(60) 0 rem(70);
   }
 }
-.p-overview::before{
+.l-overview{
   @include mq("md"){
-    background: linear-gradient(to right, #fff 0%, #fff 50%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+  }
+}
+.l-overview::after{
+  @include mq("md"){
+    content: "";
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
   }
 }
 .p-overview__title h2{
@@ -35,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
 }
 .p-overview__title h2{
