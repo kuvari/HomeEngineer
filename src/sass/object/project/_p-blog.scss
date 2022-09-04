@@ -4,13 +4,14 @@
     margin-top: rem(120);
     @include mq("md"){
         margin-top: rem(150);
-        padding: 0 rem(250);
+        padding: 0 rem(25);
     }
 }
 
 .p-blog__title h2{
     color: $white;
     text-align: center;
+    margin-bottom: rem(150);
 }
 
 .p-blog__title p{
