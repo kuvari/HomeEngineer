@@ -3,8 +3,5 @@
 .l-blog {
     background-color: rgba(17, 17, 17, 0.4);
     align-items: center;
-    margin-top: rem(356);
-    @include mq("md"){
-        padding: rem(140.4) rem(258);
-    }
+    margin-top: rem(146);
 }
