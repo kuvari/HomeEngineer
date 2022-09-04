@@ -1,13 +1,16 @@
 @use "global" as *;
 
 .p-blog__inner {
-    padding: 0 rem(2.5);
-    max-width: rem(390);
-    margin: auto;
+    margin-top: rem(120);
+    @include mq("md"){
+        margin-top: rem(150);
+        padding: 0 rem(250);
+    }
 }
 
 .p-blog__title h2{
     color: $white;
+    text-align: center;
 }
 
 .p-blog__title p{
@@ -26,6 +29,7 @@
     display: inherit;
     text-transform: uppercase;
     text-align: center;
+    align-items: center;
     width: rem(300);
     margin-top: rem(60);
     @include mq("md"){
