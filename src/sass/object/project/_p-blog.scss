@@ -1,18 +1,29 @@
 @use "global" as *;
 
-.l-blog {
-    margin-top: rem(20);
-    background-color: rgba(17, 17, 17, 0.4);
-    @include mq(md) {
-        padding-bottom: rem(43.1);
-        padding-top: rem(50.9);
+.p-blog__inner {
+    margin-top: rem(120);
+    @include mq("md"){
+        margin-top: rem(150);
+        padding: 0 rem(25);
     }
 }
 
-.p-blog__inner {
-    padding: 0 rem(2.5);
-    max-width: rem(390);
-    margin: auto;
+.p-blog__title h2{
+    color: $white;
+    text-align: center;
+    margin-bottom: rem(150);
+}
+
+.p-blog__title p{
+    color: #EBEBEB;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include mq("md"){
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .p-blog__btn {
