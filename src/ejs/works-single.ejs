@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body class="l-maxinner">
+    <section class="l-hero-sub">
+      <%- include('./project/_p-hero-sub',{title:'制作実績'}) %>
+    </section>
+    <section class="l-breadcrumb l-padding-inner">
+      <%- include('./component/_c-breadcrumb',{level1:'トップページ',level2:'制作実績',level3:'写真コミュニティ「Comodo」様'}) %>
+    </section>
+    <section class="l-works-single">
+      <%- include('./project/_p-works-single',{title:'写真コミュニティ「Comodo」様',link:'#',subtitle:'https://comodo-community.jp/'}) %>
+    </section>
+    
+    <footer class="l-footer l-footer--inner">
+      <%- include('./project/_p-footer',{copyright:'Copyright: 合同会社 CodeUps'}) %>
+    </footer>
+
+  </body>
+</html>

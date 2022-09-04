@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.l-404{
+  width: 100%;
+  background-image: url(../images/common/asagao-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include mq("md"){
+    background-position: right;
+    padding-bottom: rem(500);
+  }
+}
