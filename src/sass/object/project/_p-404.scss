@@ -1,15 +1,5 @@
 @use "global" as *;
 
-.l-404{
-  width: 100%;
-  background-image: url(../images/common/asagao-white.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  @include mq("md"){
-    background-position: right;
-    padding-bottom: rem(500);
-  }
-}
 .p-404{
   position: relative;
   background-color: rgba(255,255,255,0.77);
@@ -33,6 +23,9 @@
   font-weight: $semibold;
   font-size: rem(40);
   display: inline-block;
+  @include mq("md"){
+    font-size: rem(34);
+  }
 }
 .p-404__subtitle::before{
   content: "";
