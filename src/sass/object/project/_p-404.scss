@@ -23,6 +23,9 @@
   font-weight: $semibold;
   font-size: rem(40);
   display: inline-block;
+  @include mq("md"){
+    font-size: rem(34);
+  }
 }
 .p-404__subtitle::before{
   content: "";

@@ -181,10 +181,16 @@
   display:block;
 }
 .p-works-single__main-panel--pad{
-  padding: 0 rem(100);
+  padding: 0 rem(60);
+  @include mq("md"){
+    padding: 0 rem(100);
+  }
 }
 .p-works-single__main-panel--sp{
-  padding: 0 rem(200);
+  padding: 0 rem(100);
+  @include mq("md"){
+    padding: 0 rem(200);
+  }
 }
 .p-works-single__main-btn{
   margin-top: rem(60);
