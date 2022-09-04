@@ -15,6 +15,22 @@
     margin: auto;
 }
 
+.p-blog__title h2{
+    color: $white;
+}
+
+.p-blog__title p{
+    color: #EBEBEB;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include mq("md"){
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .p-blog__btn {
     display: inherit;
     text-transform: uppercase;
