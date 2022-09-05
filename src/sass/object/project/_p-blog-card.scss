@@ -72,6 +72,18 @@
     }
 }
 
+.p-blog-card::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: rem(1);
+    height: 100%;
+    background-color: #646157;
+    border-radius: rem(3);
+    transform: rotate(25deg);
+}
+
 //　比率の違う画像を入れてもリサイズされる
 
 .p-blog-card__img {
