@@ -35,4 +35,10 @@
 }
 .p-hero__img picture img{
   height: 100%;
+  object-fit: cover;
+  object-position: right;
+  @include mq("md"){
+    object-fit: initial;
+    object-position: initial;
+  }
 }
