@@ -12,7 +12,7 @@
     width: 100%;
     position: relative;
     display: inline-block;
-    @include mq(md) {
+    @include mq("md") {
         max-width: calc(33.3333% - rem(77) * 2 / 3);
     }
 }
@@ -29,19 +29,19 @@
 }
 
 .p-card-list__item + .p-card-list__item {
-    @include mq(md) {
+    @include mq("md") {
         margin-left: rem(77);
     }
 }
 
 .p-card-list__item:nth-child(3n + 1) {
-    @include mq(md) {
+    @include mq("md") {
         margin-left: 0;
     }
 }
 
 .p-card-list__item:nth-child(n + 4) {
-    @include mq(md) {
+    @include mq("md") {
         margin-top: rem(77);
     }
 }

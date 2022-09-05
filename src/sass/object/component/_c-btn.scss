@@ -10,13 +10,9 @@
   padding: rem(40) rem(20) rem(50);
   width: 100%;
 
-  @include mq(md) {
+  @include mq("md") {
     font-size: rem(24);
     padding: rem(24) rem(23);
     width: rem(399);
-  }
-
-  @include mq(sm) {
-    background-image: url(/images/common/more_button-sp.png);
   }
 }

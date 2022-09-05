@@ -79,7 +79,7 @@
     overflow: hidden;
     width: 100%;
 
-    @include mq(md) {
+    @include mq("md") {
         max-width: rem(557);
         width: 100%;
     }
@@ -90,7 +90,7 @@
     display: block;
     padding-top: 66.57%;
 
-    @include mq(md) {
+    @include mq("md") {
         padding-top: 66.58%;
     }
 }
