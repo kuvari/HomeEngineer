@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .c-btn {
-  background-image: url(/images/common/more_button-pc.png);
+  background-image: url(/images/common/more_button-sp.png);
   background-position: center top;
   background-size: cover;
   color: #BEA621;
@@ -11,8 +11,8 @@
   width: 100%;
 
   @include mq("md") {
+    background-image: url(/images/common/more_button-pc.png);
     font-size: rem(24);
     padding: rem(24) rem(23);
-    width: rem(399);
   }
 }
