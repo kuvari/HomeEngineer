@@ -23,6 +23,9 @@
 }
 
 .p-blog-card__info {
+    background-image: url(/images/common/card_bg2.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,18 +73,6 @@
         text-decoration: none;
         transition: opacity 0.3s;
     }
-}
-
-.p-blog-card::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    width: rem(1);
-    height: 100%;
-    background-color: #646157;
-    border-radius: rem(3);
-    transform: rotate(25deg);
 }
 
 //　比率の違う画像を入れてもリサイズされる
