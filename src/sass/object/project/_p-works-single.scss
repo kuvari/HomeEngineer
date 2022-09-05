@@ -175,6 +175,15 @@
 .p-works-single__main-tab.is-active{
   opacity: 1;
 }
+.p-works-single__main-tab--pc{
+  height: rem(100);
+}
+.p-works-single__main-tab--tab{
+  height: rem(80);
+}
+.p-works-single__main-tab--sp{
+  height: rem(60);
+}
 .p-works-single__main-panels{
   margin-top: rem(60);
 }
