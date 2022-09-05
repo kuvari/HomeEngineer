@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.l-bg{
+	position: relative;
+	overflow: hidden;
+}
+.l-bg::before{
+	content: "";
+	display: block;
+	height: 100%;
+	background-size: 100%;
+	position: absolute;
+	z-index: -1;
+	top: -4%;
+	left: rem(-80);
+	width: rem(100);
+	background-image: url(../images/common/bg_left-sp.png);
+@include mq("md"){
+		top: rem(-320);
+		left: rem(-200);
+		width: rem(300);
+		background-image: url(../images/common/bg_left.png);
+	}
+}
+.l-bg::after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background-size: 100%;
+	z-index: -1;
+	top: 0;
+	right: rem(-85);
+	width: rem(100);
+	background-image: url(../images/common/bg_right-sp.png);
+	@include mq("md"){
+		top: rem(-50);
+		right: rem(-250);
+		width: rem(350);
+		background-image: url(../images/common/bg_right.png);
+	}
+}
