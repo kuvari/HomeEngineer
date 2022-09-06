@@ -24,9 +24,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
+    }
 }
 .p-works__block{
+  width: 100%;
   margin-top: rem(50);
   @include mq("md"){
     margin-top: rem(120);
@@ -36,11 +37,8 @@
 .p-works__btn{
   display: inherit;
   text-transform: uppercase;
-  text-align: center;
-  width: rem(300);
   margin-top: rem(60);
   @include mq("md"){
-    width: rem(410);
     margin-top: 100;
   }
 }

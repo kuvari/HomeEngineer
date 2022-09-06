@@ -6,8 +6,11 @@
 .p-sub-content::before{
   content: "";
   display: block;
-  padding-top: calc((773 / 1920) * 100%);
   background-color: rgba(0,0,0,.5);
+  padding-top: calc((844 / 390) * 100%);
+  @include mq("md"){
+    padding-top: calc((773 / 1920) * 100%);
+  }
 }
 .p-sub-content__block{
   color: $white;
@@ -36,4 +39,5 @@
   top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
 }
