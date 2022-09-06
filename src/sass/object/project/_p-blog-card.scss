@@ -23,9 +23,6 @@
 }
 
 .p-blog-card__info {
-    background-image: url(/images/common/card_bg2.png);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +65,9 @@
 
 .p-blog-card {
     display: block;
-    background-color: #646157;
+    background-image: url(/images/common/card_bg2.png);
+    background-position: center;
+    background-size: cover;
     a {
         text-decoration: none;
         transition: opacity 0.3s;
