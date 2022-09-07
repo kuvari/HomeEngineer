@@ -1,4 +1,12 @@
-<section class="p-top-greeting">
+<div class="p-top-greeting">
+    <div class="p-top-greeting__title">
+        <%# if(status == 'top') { %>
+        <%# include('../component/_c-title',{title:'代表挨拶',subtitle:'greeting'}) %>
+        <%# } %>
+        <%# if(status == '404') { %>
+        <%# include('../component/_c-title',{title:'',subtitle:''}) %>
+        <%# } %>
+    </div>
     <div class="p-top-greeting__inner">
         <% if(status == 'top') { %>
         <%- include('../project/_p-greeting-content',{

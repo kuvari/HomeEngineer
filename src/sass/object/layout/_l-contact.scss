@@ -1,5 +1,13 @@
 @use "global" as *;
 
+.l-contact{
+    padding-top: rem(25);
+    padding-bottom: rem(75);
+    @include mq('md') {
+        padding-top: rem(35);
+        padding-bottom: rem(158);
+    }   
+}
 .l-contact__text-block1 {
     margin-top: rem(42);
     @include mq('md') {
@@ -22,4 +30,10 @@
         border-top: initial;
     }
 
+}
+.l-contact__pc{
+	@include mq("md"){
+		max-width: rem(1000);
+		margin: 0 auto;
+	}
 }

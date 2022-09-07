@@ -1,26 +1,30 @@
-<div class="p-404 l-404-inner">
-  <div class="p-404__breadcrumb">
-    <%- include('../component/_c-breadcrumb',{level1:'トップページ', level2:'４０４エラー',level3:''}) %>
-  </div>
-  <div class="p-404__subtitle">
-    <h3><%= subtitle %></h3>
-  </div>
-  <div class="p-404__block">
-    <p class="p-404__text"><%= text %></p>
+<div class="p-404">
+  <div class="p-404__inner l-404__inner">
+    <div class="p-404__breadcrumb">
+      <%- include('../component/_c-breadcrumb',{level1:'トップページ', level2:'４０４エラー',level3:''}) %>
+    </div>
 
-<% 
-const navs404=[
-  { link:"index.html", item:"トップページへ" },
-  { link:"contact.html", item:"お問い合わせフォームへ" },
-  { link:"news.html", item:"お知らせ一覧へ" },
-  { link:"archive.html", item:"制作実績一覧へ" },
-] %> 
+    <div class="p-404__container">
+      <div class="p-404__subtitle">
+        <h3><%= subtitle %></h3>
+      </div>
+      <div class="p-404__block">
+        <p class="p-404__text"><%= text %></p>
 
-      <ul class="p-404__nav c-nav">
-      <% for (var nav404 of navs404) {%> 
-        <li class="c-nav__item"><a href="<%= nav404.link %>"><%= nav404.item %></a></li>
-      <% } %>
-      </ul>
+      <% 
+      const navs404=[
+        { link:"index.html", item:"トップページへ" },
+        { link:"contact.html", item:"お問い合わせフォームへ" },
+        { link:"news.html", item:"お知らせ一覧へ" },
+        { link:"archive.html", item:"制作実績一覧へ" },
+      ] %> 
 
+          <ul class="p-404__nav c-nav">
+          <% for (var nav404 of navs404) {%> 
+            <li class="c-nav__item"><a href="<%= nav404.link %>"><%= nav404.item %></a></li>
+          <% } %>
+          </ul>
+      </div>
+    </div>
   </div>
 </div>

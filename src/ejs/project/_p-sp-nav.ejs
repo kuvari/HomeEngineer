@@ -10,6 +10,7 @@
         <li class="p-sp-nav__item"><%# include('../component/_c-nav-link',{link:'#', text:'制作実績'}) %></li>
         <li class="p-sp-nav__item"><%# include('../component/_c-nav-link',{link:'contact.html', text:'お問い合わせ'}) %></li>
     </ul> -->
+    <ul class="p-sp-nav__items">
     <% 
     const navItems = [
         {link:'index.html', text:'トップ'},
@@ -19,9 +20,8 @@
         {link:'contact.html', text:'お問い合わせ'},
     ]
     %> 
-    <ul class="p-pc-nav__items">
     <% for (var navItem of navItems) {%>
-        <li class="p-pc-nav__item"><a href="<%- navItem.link %>" class="c-nav-link"><%- navItem.text %></a></li>
+        <li class="p-sp-nav__item"><a href="<%- navItem.link %>" class="c-nav-link"><%- navItem.text %></a></li>
         <% } %>
     </ul>
 </div>

@@ -5,14 +5,21 @@
 }
 .p-works-single__top{
   background-color: #EFECD5;
+  margin-top: rem(40);
   padding: rem(100) 0;
   @include mq("md"){
     padding: initial;
+  }
+}
+.p-works-single__top-inner{
+  @include mq("md"){
     display: flex;
+    gap: rem(330);
   }
 }
 .p-works-single__top-container{
   @include mq("md"){
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +48,12 @@
   margin-top: rem(40);
   @include mq("md"){
     margin-top: rem(46);
+  }
+}
+
+.p-works-single__images{
+  @include mq("md"){
+    width: 55%;
   }
 }
 .p-works-single__img{
