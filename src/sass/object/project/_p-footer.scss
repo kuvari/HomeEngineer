@@ -6,7 +6,7 @@
     padding-top: rem(70);
     border-top: rem(10) solid $black;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden; 
     @include mq('md') {
         padding-top: rem(73);
