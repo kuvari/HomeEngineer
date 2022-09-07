@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-maxinner{
+	background-image: url(../images/common/bg.jpg);
+	background-size: cover;
+	@include mq("md"){
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}

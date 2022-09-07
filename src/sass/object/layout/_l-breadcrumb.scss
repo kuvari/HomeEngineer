@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-breadcrumb {
+    padding-left: $padding-sp;
+    @include mq('md') {
+        padding-left: $padding-pc;
+    }
+}
