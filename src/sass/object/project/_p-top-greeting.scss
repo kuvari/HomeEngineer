@@ -11,6 +11,26 @@
     }
 }
 
+.p-top-greeting__title {
+    position: relative;
+    display: inline-block;
+    padding-left: $padding-sp;
+        @include mq('md') {
+        padding-left: rem(90);
+        }
+}
+
+.p-top-greeting__title h2{
+    color: $black;
+}
+
+.p-top-greeting__title p{
+    color: #EBEBEB;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .p-top-greeting__bg {
     position: absolute;
     top: 0;
@@ -22,10 +42,12 @@
 .p-top-greeting__inner {
     padding-left: rem(40);
     padding-right: rem(40);
+    margin-top: rem(40);
     @include mq('md') {
         max-width: 50%;
         padding-left: rem(100);
         padding-right: rem(100);
+        margin-top: rem(70);
     }
 }
 
@@ -43,8 +65,8 @@
     left: 0;
     z-index: -20;
     @include mq('md') {
-        width: 100%;
-        left: 0;
+        left: rem(50);
+        bottom: 0;
     }
 }
 
