@@ -2,17 +2,19 @@
 
 .c-btn {
   background-image: url(/images/common/more_button-sp.png);
-  background-position: center top;
-  background-size: cover;
+  // background-position: center top;
+  background-size: 100% 100%;
   color: #BEA621;
   display: inline-block;
   text-align: center;
-  padding: rem(40) rem(20) rem(50);
+  padding: rem(18) rem(120);
+  margin: rem(63) rem(88);
   width: 100%;
 
   @include mq("md") {
     background-image: url(/images/common/more_button-pc.png);
     font-size: rem(24);
-    padding: rem(24) rem(23);
+    padding: rem(39.9) rem(72);
+    margin: rem(124) rem(110);
   }
 }

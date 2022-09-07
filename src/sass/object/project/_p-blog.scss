@@ -32,9 +32,11 @@
     text-align: center;
     align-items: center;
     width: rem(300);
-    margin-top: rem(60);
+    margin: rem(60) rem(44);
     @include mq("md"){
         width: rem(410);
         margin-top: 100;
+        margin-left: rem(44);
+        margin-right: rem(44);
     }
 }
