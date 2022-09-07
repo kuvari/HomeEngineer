@@ -1,13 +1,6 @@
 @use "global" as *;
 
 .p-contact {
-    // background-image: url(/images/common/bg01.jpg);
-    padding-top: rem(25);
-    padding-bottom: rem(75);
-    @include mq('md') {
-        padding-top: rem(35);
-        padding-bottom: rem(158);
-    }   
 }
 
 .p-contact__inner {
