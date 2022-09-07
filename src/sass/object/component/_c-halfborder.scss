@@ -8,25 +8,22 @@
 }
 .c-halfborder__title{
   @include mq("md"){
-    width: 30%;
+    width: 35%;
   }
 }
 .c-halfborder__title p{
   @include mq("md"){
     width: 100%;
-  // border-right: rem(1) solid #000000; /*線の設定*/
   }
 }
 
 .c-halfborder__text{
   margin-left: rem(20);
   padding-left: rem(20);
-  // border-left: rem(1) solid #000000;
   position: relative;
   @include mq("md"){
-    width: 70%;
+    width: 65%;
     padding-left: initial;
-    // border-left: initial;
   }
 }
 .c-halfborder__text::before{
