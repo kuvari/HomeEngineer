@@ -7,14 +7,14 @@
   color: #BEA621;
   display: inline-block;
   text-align: center;
-  padding: rem(18) rem(120);
-  margin: rem(63) rem(88);
-  width: 100%;
+  padding: rem(21) rem(150);
+  margin: rem(63) rem(-10);
 
   @include mq("md") {
     background-image: url(/images/common/more_button-pc.png);
     font-size: rem(24);
     padding: rem(39.9) rem(72);
-    margin: rem(124) rem(110);
+    margin: rem(124) rem(430);
+    width: 100%;
   }
 }
