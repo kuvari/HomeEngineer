@@ -2,6 +2,8 @@
 
 .p-sp-nav {
     background-color: #E5E1C8;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .p-sp-nav__btn {
@@ -22,10 +24,11 @@
 }
 
 .p-sp-nav__items {
-    padding-top: rem(96);
+    padding-top: rem(200);
     padding-bottom: rem(450);
     text-align: center;
     transition: .4s;
+    // height: 100vh;
 }
 
 .p-sp-nav__item a {
@@ -36,8 +39,8 @@
     font-weight: $semibold;
 }
 
-html.is-fixed,
-html.is-fixed body {
-    height: 100%;
-    overflow: hidden;
-}
+// html.is-fixed,
+// html.is-fixed body {
+//     height: 100%;
+//     overflow: hidden;
+// }
