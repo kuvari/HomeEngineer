@@ -17,8 +17,13 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
+@font-face {
+  font-family: 'playlist';
+  src: url(/font/Playlist-Script.otf);
+}
+
 $base-font-family: 'Shippori Mincho', serif;
-$second-font-family: 'Playlist-Free-Font';
+$second-font-family: 'playlist', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
