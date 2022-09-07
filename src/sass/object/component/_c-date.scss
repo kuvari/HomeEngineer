@@ -2,8 +2,10 @@
 
 .p-blog-card__date {
     background-image: url(/images/common/blog-card__date.png);
-    background-position: center top;
-    width: auto;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: rem(110);
     color: $white;
     font-size: rem(18);
     line-height: 1.85714;

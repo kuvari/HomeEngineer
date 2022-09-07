@@ -1,7 +1,55 @@
 @use "global" as *;
 
 .p-404{
+  position: relative;
+  background-color: rgba(255,255,255,0.77);
+  width: 100%;
+  padding-top: rem(93);
+  padding-bottom: rem(80);
+  @include mq("md"){
+    width: 50%;
+    padding-top: rem(140);
+    padding-bottom: rem(100);
+  }
 }
 .p-404__breadcrumb{
-  padding-left: rem(30);
+  margin-left: rem(40);
+  position: absolute;
+  top: rem(30);
+  left: 0;
+}
+.p-404__subtitle{
+  position: relative;
+  font-weight: $semibold;
+  font-size: rem(40);
+  display: inline-block;
+  @include mq("md"){
+    font-size: rem(34);
+  }
+}
+.p-404__subtitle::before{
+  content: "";
+  height: rem(1);
+  width: 100%;
+  background-color: $black;
+  position: absolute;
+  bottom: rem(-30);
+  left: 0;
+}
+.p-404__block{
+  margin-top: rem(80);
+  @include mq("md"){
+      margin-top: rem(90);
+  }
+}
+.p-404__text{
+
+}
+.p-404__nav{
+  list-style: disc;
+  margin-left: rem(50);
+  margin-top: rem(32);
+  @include mq("md"){
+    margin-top: rem(55);
+  }
 }

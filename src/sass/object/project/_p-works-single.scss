@@ -1,0 +1,219 @@
+@use "global" as *;
+
+.p-works-single{
+
+}
+.p-works-single__top{
+  background-color: #EFECD5;
+  padding: rem(100) 0;
+  @include mq("md"){
+    padding: initial;
+    display: flex;
+  }
+}
+.p-works-single__top-container{
+  @include mq("md"){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.p-works-single__top-block{
+  position: relative;
+  display: inline-block;
+}
+.p-works-single__top-block::before{
+  content: "";
+  height: rem(1);
+  width: 100%;
+  background-color: $black;
+  position: absolute;
+  bottom: rem(-20);
+  left: 0;
+}
+.p-works-single__top-title{
+  font-size: rem(32);
+}
+.p-works-single__top-link{
+
+}
+.p-works-single__tags{
+  margin-top: rem(40);
+  @include mq("md"){
+    margin-top: rem(46);
+  }
+}
+.p-works-single__img{
+  position: relative;
+}
+.p-works-single__img::before{
+  content: "";
+  display: block;
+  padding-top: calc((310 / 341) * 100%);
+  @include mq("md"){
+    padding-top: calc((556 / 611) * 100%);
+  }
+}
+.p-works-single__img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.p-works-single__images{
+  background-image: url(../images/common/comodo-sub.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: rem(60);
+  padding-top: rem(60);
+  @include mq("md"){
+    margin-top: initial;
+  }
+
+}
+.p-works-single__main{
+  margin-top: rem(80);
+  @include mq("md"){
+    margin-top: rem(150);
+    display: flex;
+    justify-content: center;
+    gap: rem(281);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.p-works-single__main-left{
+  @include mq("md"){
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: rem(90);
+  }
+  @include mq("xl"){
+    margin-left: rem(50);
+  }
+}
+.p-works-single__main-left h2{
+  font-size: rem(32);
+}
+.p-works-single__main-left p{
+  color: #EBEBEB;
+  font-size: rem(90);
+  @include mq("md"){
+    top: rem(-35);
+  }
+}
+.p-works-single__main-right{
+  @include mq("md"){
+    max-width: rem(920);
+  }
+}
+.p-works-single__main-right-block{
+  position: relative;
+  @include mq("md"){
+    display: flex;
+    justify-content: center;
+  }
+}
+.p-works-single__main-right-info{
+  margin-top: rem(36);
+  @include mq("md"){
+    margin-top: initial;
+    max-width: rem(563);
+    width: 100%;
+  }
+}
+.p-works-single__main-right-info::before{
+  content: "";
+  height: rem(1);
+  width: 100%;
+  background-color: $black;
+  position: absolute;
+  left: 0;
+  bottom: rem(-35);
+  @include mq("md"){
+    bottom: rem(-55);
+  }
+}
+.p-works-single__main-right-text{
+  display: none;
+  @include mq("md"){
+    position: relative;
+    display: block;
+    margin-top: rem(122);
+  }
+}
+.p-works-single__main-right-text::before{
+  content: "";
+  height: rem(1);
+  width: 100%;
+  background-color: $black;
+  position: absolute;
+  left: 0;
+  bottom: rem(-35);
+  @include mq("md"){
+    bottom: rem(-55);
+  }
+}
+.p-works-single__main-block{
+  margin-top: rem(120);
+  @include mq("md"){
+    margin-top: rem(114);
+  }
+}
+.p-works-single__main-tabs{
+  display: flex;
+  gap: rem(40);
+  justify-content: center;
+  align-items: end;
+}
+.p-works-single__main-tab{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.p-works-single__main-tab.is-active{
+  opacity: 1;
+}
+.p-works-single__main-tab--pc{
+  height: rem(100);
+}
+.p-works-single__main-tab--tab{
+  height: rem(80);
+}
+.p-works-single__main-tab--sp{
+  height: rem(60);
+}
+.p-works-single__main-panels{
+  margin-top: rem(60);
+}
+.p-works-single__main-panel{
+  display:none;
+}
+.p-works-single__main-panel img{
+  width: 100%;
+  height: 100%;
+}
+.p-works-single__main-panel.is-show{
+  display:block;
+}
+.p-works-single__main-panel--pad{
+  padding: 0 rem(60);
+  @include mq("md"){
+    padding: 0 rem(100);
+  }
+}
+.p-works-single__main-panel--sp{
+  padding: 0 rem(100);
+  @include mq("md"){
+    padding: 0 rem(200);
+  }
+}
+.p-works-single__main-btn{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: rem(60);
+  @include mq("md"){
+    margin-top: rem(64);
+  }
+}

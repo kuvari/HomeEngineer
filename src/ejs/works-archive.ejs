@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body class="l-maxinner">
+    <header class="l-header">
+      <%- include('./project/_p-header') %>
+    </header>
+    <section class="l-hero-sub">
+      <%- include('./project/_p-hero-sub',{title:'制作実績'}) %>
+    </section>
+
+    <div class="l-bg">
+    <section class="l-works-archive l-breadcrumb">
+      <%- include('./project/_p-works-archive') %>
+    </section>
+    
+    <footer class="l-footer l-footer--inner">
+      <%- include('./project/_p-footer',{copyright:'Copyright: 合同会社 CodeUps'}) %>
+    </footer>
+    </div>
+
+  </body>
+</html>

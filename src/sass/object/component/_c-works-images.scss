@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.c-works-images {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  @include mq("md"){
+    width: calc(100% / 3);
+  }
+}
+.c-works-images::before{
+  content: "";
+  display: block;
+  padding-top: calc((462 / 844) * 100%);
+}
+.c-works-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.c-wroks-images__mask {
+  align-items: center;/* テキストの中央揃え */
+  background: rgba(0, 0, 0, .5);/* マスクの色(黒の50%) */
+  color: #fff;/* テキストの色 */
+  text-align: center;
+  display: flex;/* テキストの中央揃え */
+  flex-direction: column;
+  justify-content: center;/* テキストの中央揃え */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;/* 最初は透明（非表示） */
+  transition: opacity .6s ease;/* ゆっくりopacityのみへ変化させる */
+}
+.c-wroks-images__mask:hover {
+  opacity: 1;/* hoverしたら透過しない(表示させる) */
+}
+.c-wroks-images__mask p {
+  width: 80%;/* テキストを横幅いっぱいにならないようにする */
+}

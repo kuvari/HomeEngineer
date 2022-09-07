@@ -14,3 +14,24 @@
 		padding-left: $padding-pc;
 	}
 }
+
+.l-maxinner{
+	background-image: url(../images/common/bg.jpg);
+	background-size: cover;
+	@include mq("md"){
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}
+
+.l-padding-inner{
+	width: 100%;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+	@include mq(md) {
+		max-width: $l-inner + strip-unit($padding-pc) * 2;
+		padding-right: $padding-pc;
+		padding-left: $padding-pc;
+	}
+}
