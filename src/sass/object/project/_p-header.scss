@@ -1,5 +1,6 @@
 @use "global" as *;
 
+
 .p-header {
     height: rem(89);
     background-color: transparent;
@@ -8,7 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 8888;
     @include mq('md') {
         padding-top: rem(20);
     }
@@ -25,7 +26,6 @@
         padding-left: rem(28);
         padding-right: rem(52);
         background-color: transparent;
-
     }
 }
 
@@ -52,7 +52,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 5555;
     display: none;
 }
 

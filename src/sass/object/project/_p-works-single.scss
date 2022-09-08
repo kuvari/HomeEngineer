@@ -4,22 +4,38 @@
 
 }
 .p-works-single__top{
+  width: 100%;
   background-color: #EFECD5;
   margin-top: rem(40);
   padding: rem(100) 0;
   @include mq("md"){
-    padding: initial;
+    padding: rem(30) 0 0;
   }
 }
 .p-works-single__top-inner{
+  width: 100%;
+	height: inherit;
+  max-width: rem(540);
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
   @include mq("md"){
+    max-width: 100%;
+    padding-left: rem(150);
+    padding-right: rem(85);
     display: flex;
-    gap: rem(330);
+    gap: rem(100);
+  }
+  @include mq("lg"){
+    gap: rem(150);
+  }
+  @include mq("xl"){
+    gap: rem(280);
   }
 }
 .p-works-single__top-container{
   @include mq("md"){
-    width: 30%;
+    max-width: rem(480);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +43,6 @@
 }
 .p-works-single__top-block{
   position: relative;
-  display: inline-block;
 }
 .p-works-single__top-block::before{
   content: "";
@@ -40,9 +55,10 @@
 }
 .p-works-single__top-title{
   font-size: rem(32);
+  display: inline-block;
 }
 .p-works-single__top-link{
-
+  display: inline-block;
 }
 .p-works-single__tags{
   margin-top: rem(40);
@@ -52,19 +68,32 @@
 }
 
 .p-works-single__images{
+  background-image: url(../images/common/comodo-sub.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: rem(60);
+  padding-top: rem(60);
   @include mq("md"){
-    width: 55%;
+    margin-top: initial;
+    width: 100%;
   }
+
 }
 .p-works-single__img{
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  @include mq("md"){
+    width: 70%;
+  }
 }
 .p-works-single__img::before{
   content: "";
   display: block;
   padding-top: calc((310 / 341) * 100%);
   @include mq("md"){
-    padding-top: calc((556 / 611) * 100%);
+    padding-top: calc((611 / 556) * 100%);
   }
 }
 .p-works-single__img img{
@@ -73,17 +102,7 @@
   left: 0;
   height: 100%;
 }
-.p-works-single__images{
-  background-image: url(../images/common/comodo-sub.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: rem(60);
-  padding-top: rem(60);
-  @include mq("md"){
-    margin-top: initial;
-  }
 
-}
 .p-works-single__main{
   margin-top: rem(80);
   @include mq("md"){
