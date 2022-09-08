@@ -11,11 +11,9 @@
     <div class="l-breadcrumb">
         <%- include('./component/_c-breadcrumb',{level1:'トップページ',level2:'お知らせアーカイブ',level3:''}) %>
     </div>
-    <div class="p-card__items p-card__list">
-        <% for (var i=0; i < 9; i++) { %>
-        <%- include('./project/_p-card-list') %>
-        <% } %>
-    </div>
+    <section class="l-blog-archive">
+    <%- include('./project/_p-blog-archive') %>
+    </section>
     <footer class="l-footer">
     <%- include('./project/_p-footer',{copyright:'Copyright: 合同会社 CodeUps'}) %>
     </footer>
