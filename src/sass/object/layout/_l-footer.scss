@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-footer--inner{
+.l-footer__inner{
   margin-top: rem(70);
   @include mq("md"){
     margin-top: rem(150);

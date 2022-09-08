@@ -24,6 +24,9 @@
     padding-left: rem(150);
     padding-right: rem(85);
     display: flex;
+    gap: rem(100);
+  }
+  @include mq("lg"){
     gap: rem(300);
   }
 }
