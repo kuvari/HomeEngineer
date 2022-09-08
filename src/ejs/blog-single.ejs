@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body class="l-maxinner">
+  <body class="l-bg">
     <header class="l-header">
       <%- include('./project/_p-header') %>
     </header>
@@ -9,7 +9,7 @@
       <%- include('./project/_p-hero-sub',{title:'制作実績'}) %>
     </section>
 
-    <div class="l-bg">
+    <div class="l-bg__point">
     <section class="l-breadcrumb l-padding-inner">
       <%- include('./component/_c-breadcrumb',{level1:'トップページ',level2:'制作実績',level3:'写真コミュニティ「Comodo」様'}) %>
     </section>
@@ -17,7 +17,7 @@
       <%- include('./project/_p-blog-single',{title:'お知らせのタイトルが入ります。長いタイトルの場合はこのようなレイアウトになります'}) %>
     </section>
 
-    <footer class="l-footer l-footer--inner">
+    <footer class="l-footer l-footer__inner">
       <%- include('./project/_p-footer',{copyright:'Copyright: 合同会社 CodeUps'}) %>
     </footer>
   </div>
