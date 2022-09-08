@@ -1,28 +1,44 @@
-<!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-	<body>
-		<header class="l-header">
-			<%- include('./project/_p-header') %>
-		</header>
-		
-		<section class="l-top-content">
-			<%- include('./project/_p-top-content') %>
-		</section>
-		
-		<section class="l-top-greeting">
-			<%- include('./project/_p-top-greeting', {status:'top'}) %>
-		</section>
-		
-		<footer class="l-footer">
-			<%- include('./project/_p-footer') %>
-		</footer>
-		<div class="l-pagination">
-			<%- include('./component/_c-pagination') %>
-		</div>
-		<div class="l-contact">
-			<%- include('./project/_p-contact') %>
-			<%- include('./project/_p-contact-form') %>
-		</div>
-	</body>
+  <body class="l-bg">
+    <header class="l-header">
+      <%- include('./project/_p-header') %>
+    </header>
+    
+    <section class="l-hero">
+      <%- include('./project/_p-hero') %>
+    </section>
+
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
+
+    <section class="l-sub-content">
+      <%- include('./project/_p-sub-content',{title:'Web業界をより良いものに',text:'業界全体のコーディングスキル向上の一端を担うべく、コーダーの人材教育を目的としたスキルアップ支援サービス「 CodeUps」を提供。モダンなコーディングの実装が可能な人材を育て、業界をより良いものにしていきます。'}) %>
+    </section>
+    
+    <section class="l-upsdelight">
+      <%- include('./project/_p-upsdelight') %>
+    </section>
+
+    <div class="l-works">
+      <%- include('./project/_p-works') %>
+    </div>
+
+    <section class="l-blog">
+      <%- include('./project/_p-blog') %>
+    </section>
+
+    <section class="l-overview">
+      <%- include('./project/_p-overview') %>
+    </section>
+
+    <section class="l-top-greeting">
+      <%- include('./project/_p-top-greeting', {status:'top'}) %>
+    </section>
+    
+    <footer class="l-footer">
+      <%- include('./project/_p-footer') %>
+    </footer>
+  </body>
 </html>
