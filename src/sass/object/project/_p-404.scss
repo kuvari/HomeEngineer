@@ -27,8 +27,8 @@
 .p-404__container{
   margin-top: rem(41);
   @include mq("md"){
-    margin-top: rem(78);
-    margin-left: 10%;
+    margin-top: rem(70);
+    padding-left: 10%;
   }
 }
 .p-404__subtitle{

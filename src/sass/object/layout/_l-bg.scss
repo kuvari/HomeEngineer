@@ -4,7 +4,6 @@
 	background-size: cover;
 	@include mq("md"){
 		margin: 0 auto;
-		max-width: 1920px;
 	}
 }
 .l-bg__point{
