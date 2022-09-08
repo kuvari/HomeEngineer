@@ -1,6 +1,13 @@
 @use "global" as *;
-
 .l-bg{
+	background-image: url(../images/common/bg.jpg);
+	background-size: cover;
+	@include mq("md"){
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}
+.l-bg__point{
 	position: relative;
 	overflow: hidden;
 	margin-top: rem(25);
@@ -8,7 +15,7 @@
         margin-top: rem(35);
     }
 }
-.l-bg::before{
+.l-bg__point::before{
 	content: "";
 	display: block;
 	height: 100%;
@@ -26,7 +33,7 @@
 		background-image: url(../images/common/bg_left.png);
 	}
 }
-.l-bg::after{
+.l-bg__point::after{
 	content: "";
 	display: block;
 	position: absolute;

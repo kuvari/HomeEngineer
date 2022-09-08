@@ -14,7 +14,12 @@
 		padding-left: $padding-pc;
 	}
 }
-
+.l-inner__max{
+	@include mq("md"){
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}
 .l-inner__sp{
 	margin: 0 auto;
 	max-width: rem(540); //状況によって変える必要があるかも
