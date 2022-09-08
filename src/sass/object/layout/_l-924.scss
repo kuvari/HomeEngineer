@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.l-924__pc{
-  @include mq("md"){
-    max-width: rem(924);
-    margin: 0 auto;
-  }
-}

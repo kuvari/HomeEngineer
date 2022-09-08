@@ -10,9 +10,6 @@
     left: 0;
     right: 0;
     z-index: 8888;
-    @include mq('md') {
-        padding-top: rem(20);
-    }
 }
 
 .p-header__inner {
@@ -20,11 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: rem(20);
-    padding-right: rem(7);
     @include mq('md') {
-        padding-left: rem(28);
-        padding-right: rem(52);
         background-color: transparent;
     }
 }

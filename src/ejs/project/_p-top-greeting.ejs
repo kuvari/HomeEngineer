@@ -1,22 +1,24 @@
 <div class="p-top-greeting">
-    <div class="p-top-greeting__title">
-        <% if(status == 'top') { %>
-        <%- include('../component/_c-title',{title:'代表挨拶',subtitle:'greeting'}) %>
-        <% } %>
-        <% if(status == '404') { %>
-        <%- include('../component/_c-title',{title:'',subtitle:''}) %>
-        <% } %>
+    <div class="l-inner">
+        <div class="p-top-greeting__title">
+            <% if(status == 'top') { %>
+            <%- include('../component/_c-title',{title:'代表挨拶',subtitle:'greeting'}) %>
+            <% } %>
+            <% if(status == '404') { %>
+                <%- include('../component/_c-title',{title:'',subtitle:''}) %>
+                <% } %>
+        </div>
+        <div class="p-top-greeting__inner">
+            <% if(status == 'top') { %>
+                <%- include('../project/_p-greeting-content',{
+                    title:'',subtitle:'クリエイティブで企業の発展に貢献する',text1:'クリエイティブな職業といわれるWeb制作業界ですが、なによりも大切なのは品質の担保です。今やホームページは持っていて当たり前',text2:'私はもともと、溶接特化の製造業出身で、誰もが知る電力会社、製鉄会社、製紙会社やセメント会社を主要取引先とした企業で勤めていた経験から、ものづくり（クリエイティブ）における品質の担保はなによりも大切であることを学びました。',text3:'ホームページは、企業のWeb上の顔であり、時には集客をする重要な役割を担った欠かせないツールのひとつです。',
+                    boss:'代表',name:'松村拓貴'}) %>
+            <% } %>
+            <% if(status == '404') { %>
+                <%- include('../project/_p-404',{
+                    subtitle:'ページが見つかりませんでした',text:'お探しのページは移動したか、もしくは削除された可能性がありますので以下よりページへ移動してください',
+                    link1:'トップページへ',link2:'お問い合わせフォームへ',link3:'お知らせ一覧へ',link4:'ブログ一覧へ',link5:'制作実績一覧へ'}) %>
+            <% } %>
+        </div>
     </div>
-    <div class="p-top-greeting__inner">
-        <% if(status == 'top') { %>
-        <%- include('../project/_p-greeting-content',{
-        title:'',subtitle:'クリエイティブで企業の発展に貢献する',text1:'クリエイティブな職業といわれるWeb制作業界ですが、なによりも大切なのは品質の担保です。今やホームページは持っていて当たり前',text2:'私はもともと、溶接特化の製造業出身で、誰もが知る電力会社、製鉄会社、製紙会社やセメント会社を主要取引先とした企業で勤めていた経験から、ものづくり（クリエイティブ）における品質の担保はなによりも大切であることを学びました。',text3:'ホームページは、企業のWeb上の顔であり、時には集客をする重要な役割を担った欠かせないツールのひとつです。',
-        boss:'代表',name:'松村拓貴'}) %>  
-        <% } %>
-        <% if(status == '404') { %>
-            <%- include('../project/_p-404',{
-            subtitle:'ページが見つかりませんでした',text:'お探しのページは移動したか、もしくは削除された可能性がありますので以下よりページへ移動してください',
-            link1:'トップページへ',link2:'お問い合わせフォームへ',link3:'お知らせ一覧へ',link4:'ブログ一覧へ',link5:'制作実績一覧へ'}) %>      
-        <% } %>    
-    </div>
-</section>
+</div>
