@@ -1,7 +1,17 @@
 <div class="p-blog-archive">
-    <div class="p-card__items p-card__list">
-        <% for (var i=0; i < 9; i++) { %>
-        <%- include('../project/_p-card-list') %>
-        <% } %>
+    <div class="p-blog-archive__bg">
+        <div class="l-breadcrumb">
+            <%- include('../component/_c-breadcrumb',{level1:'トップページ',level2:'お知らせアーカイブ',level3:''}) %>
+        </div>
+        <div class="p-blog-archive__inner">
+            <div class="p-card__items p-card__list">
+                <% for (var i=0; i < 9; i++) { %>
+                <%- include('../project/_p-card-list') %>
+                <% } %>
+            </div>
+        </div>
+        <div class="l-pagination">
+            <%- include('../component/_c-pagination') %>
+        </div>
     </div>
 </div>
