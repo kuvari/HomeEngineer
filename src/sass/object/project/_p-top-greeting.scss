@@ -6,7 +6,7 @@
     z-index: -100;
     padding-top: rem(35);
     margin: 0 calc(50% - 50vw);
-    width: 100vw;
+    // width: 100vw;
     @include mq('md') {
         padding-top: rem(65);
         padding-bottom: rem(200);
