@@ -10,6 +10,7 @@
   padding: rem(21) rem(0);
   width: rem(250);
   box-shadow: 0 rem(10) rem(15) rgba(0,0,0,0.25);
+  border-radius: rem(25) rem(25);
 
   @include mq("md") {
     background-image: url(/images/common/more_button-pc.png);
