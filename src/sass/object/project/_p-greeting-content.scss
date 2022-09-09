@@ -22,6 +22,7 @@
         line-height: 1.0588;
     }
 }
+
 // 404ページ用
 .p-greeting-content__subtitle--404{
     display: inline-block;
@@ -62,6 +63,7 @@
     line-height: 2;
     font-weight: $semibold;
 }
+
 .p-greeting-content__text--404{
     margin-top: rem(80);
     @include mq("md"){

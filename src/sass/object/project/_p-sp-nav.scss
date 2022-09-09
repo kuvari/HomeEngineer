@@ -28,7 +28,7 @@
     padding-bottom: rem(450);
     text-align: center;
     transition: .4s;
-    // height: 100vh;
+    height: 100vh;
 }
 
 .p-sp-nav__item a {
@@ -39,8 +39,8 @@
     font-weight: $semibold;
 }
 
-// html.is-fixed,
-// html.is-fixed body {
-//     height: 100%;
-//     overflow: hidden;
-// }
+html.is-fixed,
+html.is-fixed body {
+    height: 100%;
+    overflow: hidden;
+}
