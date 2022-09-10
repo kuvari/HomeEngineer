@@ -86,6 +86,7 @@
 .p-greeting__subtitle {
     display: inline-block;
     font-size: rem(24);
+    line-height: calc(36 / 24);
     font-weight: $extrabold;
     @include mq('md') { 
         font-size: rem(34);

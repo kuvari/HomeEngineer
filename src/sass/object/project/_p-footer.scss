@@ -74,7 +74,7 @@
 }
 
 .p-footer__text {
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 2.5714;
     font-weight: $regular;
     @include mq('md') {
@@ -93,7 +93,7 @@
 }
 
 .p-footer__copyright small {
-    font-size: 13px;
+    font-size: rem(13);
     font-weight: $semibold;
     line-height: 2.4615;
 }

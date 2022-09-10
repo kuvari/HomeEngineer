@@ -35,12 +35,10 @@
   position: relative;
   display: inline-block;
   font-weight: $semibold;
-  font-size: rem(22);
-  @include mq("md"){
-    font-size: rem(22);
-  }
+  font-size: rem(26);
+  line-height: 2;
   @include mq("lg"){
-    font-size: rem(28);
+    font-size: rem(30);
   }
   @include mq("xl"){
     font-size: rem(32);
@@ -62,7 +60,8 @@
   }
 }
 .p-404__text{
-
+  font-size: rem(18);
+  line-height: 2;
 }
 .p-404__nav{
   list-style: disc;
@@ -71,4 +70,8 @@
   @include mq("md"){
     margin-top: rem(55);
   }
+}
+.p-404__nav,.c-nav__item{
+  font-size: rem(18);
+  line-height: calc(40 / 18);
 }

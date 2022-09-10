@@ -21,6 +21,7 @@
 .c-info__left{
   width: 13%;
   font-size: rem(24);
+  line-height: calc(36 / 24);
   font-weight: $bold;
   text-transform: capitalize;
   text-align: right;
@@ -29,6 +30,7 @@
   width: 66%;
   margin-left: 3%;
   font-size: rem(18);
+  line-height: calc(32 / 18);
   font-weight: $regular;
   padding-left: rem(15);
   border-left: solid rem(2) $black;
@@ -40,7 +42,8 @@
 .c-info__right{
   width: 15%;
   display: inline-block;
-  font-size: rem(24);
+  font-size: rem(18);
+  line-height: calc(32 / 18);
   font-weight: $regular;
   position: relative;
   text-decoration: none;

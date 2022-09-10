@@ -49,18 +49,22 @@
 .p-overview__company{
   font-weight: $medium;
   font-size: rem(28);
+  line-height: calc(32 / 28);
   margin-top: rem(12);
   @include mq("md"){
     font-size: rem(32);
+    line-height: 1;
     margin-top: rem(72);
   }
 }
 .p-overview__info{
   font-size: rem(16);
+  line-height: calc(32 / 16);
   font-weight: $medium;
   margin-top: rem(26);
   @include mq("md"){
     font-size: rem(18);
+    line-height: calc(32 / 18);
     margin-top: rem(19);
   }
   // color: inherit;
