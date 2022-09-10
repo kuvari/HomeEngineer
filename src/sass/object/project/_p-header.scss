@@ -1,10 +1,11 @@
 @use "global" as *;
 
-
+// *{
+//     outline: 2px red solid;
+// }
 .p-header {
-    height: rem(89);
+    height: rem(90);
     background-color: transparent;
-    padding-top: rem(10);
     position: fixed;
     top: 0;
     left: 0;
@@ -30,8 +31,12 @@
     }
 }
 
-.p-header__menu-btn {
+.p-header__menu {
     width: rem(50);
+}
+
+.p-header__btn {
+    cursor: pointer;
 }
 
 .p-header__nav {
