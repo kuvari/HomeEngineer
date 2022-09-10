@@ -67,7 +67,6 @@
   margin-top: rem(-15);
 }
 .c-card__datetag{
-
 }
 .c-card__tags{
   display: flex;
@@ -102,8 +101,10 @@
   font-size: rem(32);
 }
 .c-card__text{
+  font-size: rem(18);
+  line-height: calc(30 / 18);
   margin-top: rem(40);
-  height: rem(75);
+  height: rem(92);
   overflow: hidden;
 }
 

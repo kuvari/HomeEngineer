@@ -7,6 +7,8 @@
   }
 }
 .c-halfborder__title{
+  font-size: rem(20);
+  line-height: 1;
   @include mq("md"){
     width: 35%;
   }
@@ -18,12 +20,14 @@
 }
 
 .c-halfborder__text{
+  position: relative;
+  font-size: rem(20);
+  line-height: 1;
   margin-left: rem(20);
   padding-left: rem(20);
-  position: relative;
   @include mq("md"){
-    width: 65%;
     padding-left: initial;
+    width: 65%;
   }
 }
 .c-halfborder__text::before{

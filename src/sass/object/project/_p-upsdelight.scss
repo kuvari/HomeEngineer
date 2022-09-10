@@ -84,10 +84,12 @@
 }
 .p-upsdelight__left-title{
   font-size: rem(42);
+  line-height: calc(42 / 22);
   font-weight: $semibold;
   width: 70%;
   @include mq("md"){
     font-size: rem(60);
+    line-height: calc(60 / 32);
     font-weight: $bold;
     order: 1;
     padding-right: rem(40);
@@ -97,11 +99,13 @@
 }
 .p-upsdelight__right-title{
   font-size: rem(42);
+  line-height: calc(42 / 22);
   font-weight: $semibold;
   width: 70%;
   text-align: right;
   @include mq("md"){
     font-size: rem(60);
+    line-height: calc(60 / 32);
     font-weight: $bold;
     width: initial;
     text-align: initial;
@@ -114,17 +118,25 @@
 .p-upsdelight__left-text{
   width: 70%;
   margin-top: rem(32);
+  font-size: rem(14);
+  line-height: calc(28 / 14);
   @include mq("md"){
     width: initial;
     margin-top: initial;
+    font-size: rem(18);
+    line-height: 2;  
   }
 }
 .p-upsdelight__right-text{
   width: 70%;
   margin-top: rem(32);
+  font-size: rem(14);
+  line-height: calc(28 / 14);
   @include mq("md"){
     width: initial;
     margin-top: initial;
+    font-size: rem(18);
+    line-height: 2;  
   }
 }
 .p-upsdelight__left::before{

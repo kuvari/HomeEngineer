@@ -27,6 +27,7 @@
 }
 .p-blog-single__title{
   font-size: rem(40);
+  line-height: 1.5;
   font-weight: $semibold;
 }
 .p-blog-single__block{
@@ -66,10 +67,15 @@
   top: 0;
   left: 0;
 }
+.p-blog-single__lists{
+  font-size: rem(18);
+  line-height: 1.8;
+}
 .p-blog-single__quote{
   position: relative;
   width: 100%;
   background-color: #6A6A6A;
+  line-height: 1.8;
   font-weight: $semibold;
   color: $white;
   line-height: 1.8;
@@ -97,6 +103,7 @@
 }
 .p-blog-single__table{
   width: 100%;
+  line-height: 1.8;
   background-color: $white;
   border-collapse:  collapse;
   margin-top: rem(62);

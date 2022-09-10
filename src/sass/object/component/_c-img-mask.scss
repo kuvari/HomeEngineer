@@ -42,3 +42,11 @@
 .c-img-mask__mask p {
   width: 80%;/* テキストを横幅いっぱいにならないようにする */
 }
+.c-img-mask__mask p:first-child{
+  font-size: rem(18);
+  line-height: calc(32/18);
+}
+.c-img-mask__mask p:nth-child(2){
+  font-size: rem(14);
+  line-height: calc(32/14);
+}

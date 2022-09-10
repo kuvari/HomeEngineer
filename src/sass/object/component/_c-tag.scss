@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .c-tag{
-  font-size: inherit;
+  font-size: rem(16);
+  line-height: 1;
   color: $white;
   display: inline-block;
   padding: rem(4) rem(10);

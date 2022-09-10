@@ -17,6 +17,7 @@
   z-index: -1;
   font-family: $second-font-family;
   font-size: rem(96);
+  line-height: 2;
   @include mq("md"){
     left: rem(-35);
     top: rem(-30);  
