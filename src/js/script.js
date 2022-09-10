@@ -64,5 +64,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 		$('.p-works-single__main-panel').eq(index).addClass('is-show');
 	});
 
+  //カードhover時
+  $(".c-card").hover(function () {
+    $(this).find(".c-card__img").toggleClass("is-active");
+    $(this).find(".c-card__mask").toggleClass("is-active");
+  });
 
 });

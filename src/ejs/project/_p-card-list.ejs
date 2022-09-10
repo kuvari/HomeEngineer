@@ -1,16 +1,11 @@
 <div class="p-card-list">
-  <% if(status == 'top') { %>
+
   <% 
   const blogTops=[
     { pass:"blog-image.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"},
     { pass:"blog-noimage.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"},
     { pass:"blog-image.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}
   ] %>
-
-    <% for (var blogTop of blogTops) {%> 
-      <%- include('../component/_c-card',{meta:blogTop}) %>
-    <% } %>
-  <% }else if(status == 'archive'){%>
   <% 
   const blogArchives=[
     { pass:"blog-image.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"},
@@ -23,6 +18,12 @@
     { pass:"blog-noimage.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"},
     { pass:"blog-image.jpg",datetime:"2022-12-31",date:"12月31日",tag1:"coding",tag2:"coding",title:"写真コミュニティ「Comodo」テキストが入ります",text:"写真のコミュニティサイト Comodo のコーディングを担当いたしました。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}
   ] %> 
+
+  <% if(status == 'top') { %>
+    <% for (var blogTop of blogTops) {%> 
+      <%- include('../component/_c-card',{meta:blogTop}) %>
+    <% } %>
+  <% }else if(status == 'archive'){%>
     <% for (var blogArchive of blogArchives) {%> 
       <%- include('../component/_c-card',{meta:blogArchive}) %>
     <% } %>
