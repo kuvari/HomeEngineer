@@ -1,28 +1,28 @@
-<div class="l-breadcrumb l-inner">
-  <%- include('../component/_c-breadcrumb',{level1:'トップページ', level2:'制作実績アーカイブ',level3:''}) %>
-</div>
-<div class="p-works-archive l-inner">
+<div class="p-works-archive">
+  <div class="l-breadcrumb">
+    <%- include('../component/_c-breadcrumb',{level1:'トップページ', level2:'制作実績アーカイブ',level3:''}) %>
+  </div>
   <% 
   const worksArchives=[
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc2.jpg", alt:"制作実績イメージ2" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc2.jpg", alt:"制作実績イメージ2" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc2.jpg", alt:"制作実績イメージ2" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc2.jpg", alt:"制作実績イメージ2" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
-    { pass:"./images/common/p-work-pc2.jpg", alt:"制作実績イメージ2" },
-    { pass:"./images/common/p-work-pc1.jpg", alt:"制作実績イメージ1" },
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc2.jpg",alt:"制作実績イメージ2",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc2.jpg",alt:"制作実績イメージ2",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc2.jpg",alt:"制作実績イメージ2",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc2.jpg",alt:"制作実績イメージ2",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc2.jpg",alt:"制作実績イメージ2",title:"Comodo",text:"more detail"},
+    { link:'works-single.html',path:"./images/common/p-work-pc1.jpg",alt:"制作実績イメージ1",title:"Comodo",text:"more detail"},
   ] %> 
-  <div class="p-works-archive__block">
+  <div class="p-works-archive__block l-works-archive__inner">
   <% for (var worksArchive of worksArchives) {%> 
-    <%- include('../component/_c-img',{pass:worksArchive.pass,alt:worksArchive.alt}) %>
+    <%- include('../component/_c-img-mask',{link:worksArchive.link,path:worksArchive.path,alt:worksArchive.alt,title:worksArchive.title,text:worksArchive.text}) %>
   <% } %>
   </div>
   <div class="p-works-archive__pagination">
