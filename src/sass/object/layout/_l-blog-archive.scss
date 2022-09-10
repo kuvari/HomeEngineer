@@ -1,19 +1,6 @@
 @use "global" as *;
 
-
-.p-blog-archive__bg {
-    background-image: url(/images/common/bg01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: rem(25);
-    padding-bottom: rem(74);
-    @include mq('md') {
-        padding-top: rem(35);
-        padding-bottom: rem(150);
-    }
-}
-
-.p-blog-archive__inner {
+.l-blog-archive__inner {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
     margin-top: rem(42);

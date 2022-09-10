@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .p-works{
   display: flex;
   flex-direction: column;
@@ -14,11 +13,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  @include mq("md"){
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    }
 }
 .p-works__block{
   width: 100%;
@@ -29,7 +23,6 @@
   }
 }
 .p-works__btn{
-  display: inherit;
   text-transform: uppercase;
   margin-top: rem(60);
   @include mq("md"){

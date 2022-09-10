@@ -1,7 +1,5 @@
 @use "global" as *;
-.p-tag{
-  font-size: rem(16);
-}
+
 .c-datetag{
   font-size: inherit;
   color: $white;
@@ -11,21 +9,3 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-// .c-datetag{
-//   font-size: inherit;
-//   color: $white;
-//   display: inline-block;
-//   padding: rem(4) 0;
-//   background-color: $black;
-// }
-// .c-datetag::before{
-//   content: '';
-// 	display: inline-block;
-// 	width: 18px; /*アイコン画像横サイズ*/
-// 	height: 18px; /*アイコン画像縦サイズ*/
-//   background-image: url(../images/common/datetag_left.png);
-// }
-// .c-datetag::after{
-//   content: '';
-//   background-image: url(../images/common/datetag_right.png);
-// }

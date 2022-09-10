@@ -1,13 +1,11 @@
-<div class="p-blog__inner l-inner">
+<div class="p-blog">
     <div class="p-blog__title">
         <%- include('../component/_c-title',{title:'ブログ',subtitle:'blog'}) %>
     </div>
-    <div class="p-card__items p-card__list">
-        <% for (var i=0; i < 3; i++) { %>
-        <%- include('../project/_p-card-list') %>
-        <% } %>
+    <div class="p-blog__block l-inner">
+        <%- include('_p-card-list',{status:'top'}) %>
     </div>
     <div class="p-blog__btn">
-        <%- include('../component/_c-btn',{text:'MORE', link:'blog-archive.html'}) %>
+        <%- include('../component/_c-btn',{text:'more', link:'blog-archive.html'}) %>
     </div>
 </div>

@@ -1,13 +1,8 @@
 @use "global" as *;
 
 .l-blog {
-    background-color: rgba(17, 17, 17, 0.4);
-    align-items: center;
-    margin-top: rem(146);
-    padding-top: rem(70);
-    padding-bottom: rem(80);
-    @include mq(md) {
-        padding-bottom: rem(200);
-        padding-top: rem(130);
+    margin-top: rem(65);
+    @include mq("md"){
+        margin-top: rem(135);
     }
 }

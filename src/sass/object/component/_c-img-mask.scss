@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.c-works-images {
+.c-img-mask {
   cursor: pointer;
   position: relative;
   width: 100%;
@@ -8,18 +8,18 @@
     width: calc(100% / 3);
   }
 }
-.c-works-images::before{
+.c-img-mask::before{
   content: "";
   display: block;
   padding-top: calc((462 / 844) * 100%);
 }
-.c-works-images img {
+.c-img-mask img {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
 }
-.c-wroks-images__mask {
+.c-img-mask__mask {
   align-items: center;/* テキストの中央揃え */
   background: rgba(0, 0, 0, .5);/* マスクの色(黒の50%) */
   color: #fff;/* テキストの色 */
@@ -35,9 +35,9 @@
   opacity: 0;/* 最初は透明（非表示） */
   transition: opacity .6s ease;/* ゆっくりopacityのみへ変化させる */
 }
-.c-wroks-images__mask:hover {
+.c-img-mask__mask:hover {
   opacity: 1;/* hoverしたら透過しない(表示させる) */
 }
-.c-wroks-images__mask p {
+.c-img-mask__mask p {
   width: 80%;/* テキストを横幅いっぱいにならないようにする */
 }
