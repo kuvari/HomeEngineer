@@ -1,16 +1,13 @@
 <div class="p-header">
-    <div class="p-header__inner l-inner">
+    <div class="p-header__inner l-inner__header">
         <div class="p-header__logo">
             <%- include('../component/_c-logo',{link:'index.html',alt:'CodeUpsロゴ画像'}) %>
-            <!-- <a href="#">
-                <img src="images/common/logo.svg" alt="ロゴ画像">
-            </a> -->
         </div>
-        <div class="p-header__menu-btn p-menu-btn u-mobile js-nav">
-            <a href="#">
+        <div class="p-header__menu p-menu-btn u-mobile js-nav">
+            <div class="p-header__btn">
                 <img src="/images/common/sakura_icon_black.png" alt="桜アイコン（黒）">
                 <span class="p-menu-btn__text">menu</span>
-            </a>
+            </div>
         </div>
         <nav class="p-header__nav u-desktop">
             <%- include('./_p-pc-nav') %>

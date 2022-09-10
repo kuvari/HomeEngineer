@@ -1,0 +1,74 @@
+<div class="p-works-single">
+  <div class="p-works-single__breadcrumb l-inner">
+    <%- include('../component/_c-breadcrumb',{level1:'トップページ',level2:'制作実績',level3:'写真コミュニティ「Comodo」様'}) %>
+  </div>
+  <div class="p-works-single__top">
+    <div class="p-works-single__top-inner l-inner__max-only">
+      <div class="p-works-single__top-container">
+        <div class="p-works-single__top-block">
+          <p class="p-works-single__top-title"><%= title %></p>
+          <p class="p-works-single__top-link"><a href="<%= link %>"><%= subtitle %></a></p>
+        </div>
+        <% 
+        const tabComodos=[
+          { tab:"Coding"},
+          { tab:"WordPress"},
+          { tab:"JavaScript"},
+        ] %> 
+        <div class="p-works-single__tags">
+          <% for (var tabComodo of tabComodos) {%> 
+            <%- include('../component/_c-tag',{tag:tabComodo.tab}) %>
+          <% } %>
+        </div>
+      </div>
+      <div class="p-works-single__images">
+        <div class="p-works-single__img">
+          <img src="./images/common/comodo-mini.jpg" alt="写真コミュニティ「Comodo」様">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-works-single__main l-inner">
+    <div class="p-works-single__main-left">
+        <%- include('../component/_c-title',{title:'詳細',subtitle:'Work'}) %>
+    </div>
+    <div class="p-works-single__main-right">
+      <div class="p-works-single__main-right-block">
+        <% 
+        const workInfos=[
+          { title:"クライアント",name:"Comodo 様"},
+          { title:"事業内容",name:"総合警備・人材派遣"},
+          { title:"担当範囲",name:"企画/サイト設計/Coding/WordPress"},
+          { title:"CMS",name:"WordPress"},
+          { title:"URL",name:"https://comodo-community.jp/"},
+        ] %> 
+        <div class="p-works-single__main-right-info">
+          <% for (var workInfo of workInfos) {%> 
+            <%- include('../component/_c-halfborder',{title:workInfo.title,name:workInfo.name}) %>
+          <% } %>
+        </div>
+      </div>
+      <div class="p-works-single__main-right-text">
+        <p>段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。段落のテキストが入ります。</p>
+      </div>
+      <div class="p-works-single__main-block">
+        <ul class="p-works-single__main-tabs">
+          <li class="p-works-single__main-tab is-active"><img class="p-works-single__main-tab--pc" src="./images/common/p-work-pc.png" alt="PCアイコン"></li>
+          <li class="p-works-single__main-tab"><img class="p-works-single__main-tab--tab" src="./images/common/p-work-tab.png" alt="タブレットアイコン"></li>
+          <li class="p-works-single__main-tab"><img class="p-works-single__main-tab--sp" src="./images/common/p-work-sp.png" alt="スマホアイコン"></li>
+        </ul>
+        <div class="p-works-single__main-panels">
+          <div class="p-works-single__main-panel is-show"><img src="./images/common/comodo.jpg" alt="写真コミュニティ「Comodo」様Webサイト"></div>
+          <div class="p-works-single__main-panel p-works-single__main-panel--pad"><img src="./images/common/comodo-mini.jpg" alt="写真コミュニティ「Comodo」様レスポンシブ（タブレット）"></div>
+          <div class="p-works-single__main-panel p-works-single__main-panel--sp"><img src="./images/common/comodo-sp.jpg" alt="写真コミュニティ「Comodo」様レスポンシブ（スマホ）"></div>
+        </div>
+      </div>
+
+      <div class="p-works-single__main-btn">
+      <%- include('../component/_c-btn',{link:'works-archive.html',text:'archive'}) %>
+      </div>
+
+    </div>
+  </div>
+</div>

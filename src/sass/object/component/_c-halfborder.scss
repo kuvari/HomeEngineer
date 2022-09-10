@@ -8,26 +8,22 @@
 }
 .c-halfborder__title{
   @include mq("md"){
-    width: 50%;
-    text-align: left;
+    width: 35%;
   }
 }
 .c-halfborder__title p{
   @include mq("md"){
-    width: 20%;
-  // border-right: rem(1) solid #000000; /*線の設定*/
+    width: 100%;
   }
 }
 
 .c-halfborder__text{
   margin-left: rem(20);
   padding-left: rem(20);
-  // border-left: rem(1) solid #000000;
   position: relative;
   @include mq("md"){
-    width: 50%;
+    width: 65%;
     padding-left: initial;
-    // border-left: initial;
   }
 }
 .c-halfborder__text::before{
@@ -45,6 +41,7 @@
 }
 
 .c-halfborder+.c-halfborder{
+  margin-top: rem(36);
   @include mq("md"){
     margin-top: rem(30);
   }

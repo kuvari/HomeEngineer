@@ -1,0 +1,149 @@
+@use "global" as *;
+
+
+.p-blog-single{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  @include mq('md') {
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+  }
+}
+.p-blog-single__titles{
+  position: relative;
+  display: inline-block;
+}
+.p-blog-single__titles::before{
+  content: "";
+  height: rem(1);
+  width: 100%;
+  background-color: $black;
+  position: absolute;
+  bottom: rem(-30);
+  left: 0;
+}
+.p-blog-single__title{
+  font-size: rem(40);
+  font-weight: $semibold;
+}
+.p-blog-single__block{
+  display: flex;
+  margin-top: rem(80);
+  justify-content: space-between;
+  @include mq("md"){
+    justify-content: initial;
+  }
+}
+.p-blog-single__datetag{
+}
+.p-blog-single__tags{
+  display: flex;
+  gap: rem(10) 0;
+  flex-direction: column;
+  @include mq("md"){
+    gap: 0 rem(20);
+    flex-direction: row;
+    margin-left: rem(17);
+  }
+}
+.p-blog-single__images{
+  margin-top: rem(60);
+}
+.p-blog-single__img{
+  position: relative;
+  width: 100%;
+}
+.p-blog-single__img{
+  content: "";
+  display: block;
+  padding-top: 54.5454%;
+}
+.p-blog-single__img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-blog-single__quote{
+  position: relative;
+  width: 100%;
+  background-color: #6A6A6A;
+  font-weight: $semibold;
+  color: $white;
+  line-height: 1.8;
+  margin-top: rem(55);
+  padding: rem(100) rem(30) rem(52);
+  @include mq("md"){
+    padding: rem(130) rem(90) rem(90);
+  }
+}
+.p-blog-single__quote::before{
+	content:"“";                                                    /* 文字コード */
+  font-size: rem(230);
+  color:$white;                                                           /* 文字色 */
+	position:absolute;
+  left:2%;
+  top:-18%;
+}
+.p-blog-single__quote cite{
+  display: flex;
+  justify-content: end;
+  margin-top: rem(22);
+  @include mq("md"){
+    margin-top: rem(28);
+  }
+}
+.p-blog-single__table{
+  width: 100%;
+  background-color: $white;
+  border-collapse:  collapse;
+  margin-top: rem(62);
+  @include mq("md"){
+    margin-top: rem(80);
+  }
+}
+.p-blog-single__table th{
+  width: 30%;
+}
+.p-blog-single__table td{
+  width: 70%;
+}
+.p-blog-single__table th,.p-blog-single__table td{
+  border: solid 1px $black;
+  padding: rem(10) rem(5);
+}
+
+.p-blog-single__lists{
+  margin-top: rem(30);
+}
+.p-blog-single__dot{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.p-blog-single__dot+.p-blog-single__dot{
+  margin-top: rem(20);
+}
+.p-blog-single__dot:nth-child(2){
+  padding-left: rem(20);
+}
+.p-blog-single__dot:nth-child(3){
+  padding-left: rem(30);
+}
+.p-blog-single__ints{
+  margin-top: rem(48);
+}
+.p-blog-single__int{
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.p-blog-single__int+.p-blog-single__int{
+  margin-top: rem(20);
+}
+.p-blog-single__int:nth-child(2){
+  padding-left: rem(20);
+}
+.p-blog-single__int:nth-child(3){
+  padding-left: rem(30);
+}

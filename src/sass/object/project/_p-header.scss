@@ -1,16 +1,16 @@
 @use "global" as *;
 
+// *{
+//     outline: 2px red solid;
+// }
 .p-header {
-    height: rem(89);
+    height: rem(90);
     background-color: transparent;
-    padding-top: rem(10);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    @include mq('md') {
-        padding-top: rem(20);
-    }
+    z-index: 8888;
 }
 
 .p-header__inner {
@@ -18,13 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: rem(20);
-    padding-right: rem(7);
     @include mq('md') {
-        padding-left: rem(28);
-        padding-right: rem(52);
         background-color: transparent;
-
     }
 }
 
@@ -36,8 +31,12 @@
     }
 }
 
-.p-header__menu-btn {
+.p-header__menu {
     width: rem(50);
+}
+
+.p-header__btn {
+    cursor: pointer;
 }
 
 .p-header__nav {
@@ -51,7 +50,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 5555;
     display: none;
 }
 

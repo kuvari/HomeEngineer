@@ -8,7 +8,7 @@
     margin-right: auto;
 }
 
-.c-pagination__list {
+.c-pagination__items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
 .c-pagination__item--next {
     background-color: transparent;
     border: none;
-    margin-right: rem(48);
+    margin-right: rem(20);
     padding: 0;
     @include mq('md') {
         margin-right: rem(30);
@@ -44,7 +44,7 @@
 .c-pagination__item--prev {
     background-color: transparent;
     border: none;
-    margin-left: rem(48);
+    margin-left: rem(16);
     padding: 0;
     @include mq('md') {
         margin-left: rem(30);

@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.l-404__inner{
+	width: 100%;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+	@include mq(md) {
+		padding-right: initial;
+		padding-left: initial;
+	}
+
+}
+.l-404__bg{
+	@include mq("md"){
+		max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+	}
+}

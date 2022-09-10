@@ -4,12 +4,12 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$l-inner: 1400px;
+$l-inner: 1920px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 25px;
-$padding-sp: 20px;
+$padding-pc: 40px;
+$padding-sp: 40px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
@@ -17,8 +17,13 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
+@font-face {
+  font-family: 'playlist';
+  src: url(/font/Playlist-Script.otf);
+}
+
 $base-font-family: 'Shippori Mincho', serif;
-$second-font-family: 'Playlist-Free-Font';
+$second-font-family: 'playlist', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {

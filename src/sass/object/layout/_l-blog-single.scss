@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.l-blog-single{
+  margin-top: rem(40);
+  @include mq("md"){
+    margin-top: rem(80);
+  }
+}
+
+.l-blog-single__inner{
+  max-width: 540px;
+  margin-top: rem(42);
+  @include mq("md"){
+    max-width: rem(924);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(78);
+  }
+}

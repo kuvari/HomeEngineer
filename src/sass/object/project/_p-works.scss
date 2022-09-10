@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-works{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-works__title h2{
+  color: $black;
+}
+.p-works__title p{
+  color: #EBEBEB;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-works__block{
+  width: 100%;
+  margin-top: rem(50);
+  @include mq("md"){
+    margin-top: rem(120);
+    display: flex;
+  }
+}
+.p-works__btn{
+  text-transform: uppercase;
+  margin-top: rem(60);
+  @include mq("md"){
+    margin-top: 100;
+  }
+}

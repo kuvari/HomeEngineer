@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body class="l-maxinner">
+  <body class="l-bg">
     <section class="p-hero">
       <%- include('./project/_p-hero') %>
     </section>
@@ -16,18 +16,12 @@
       <%- include('./component/_c-halfborder',{title:'クライアント',name:'Codeups様'}) %>
     </section>
     
-    <section class="p-tag"><!--親クラスは練習用-->
-      <%- include('./component/_c-tag',{tag:'Coding'}) %>
-    </section>
-
-    <section class="p-tag"><!--親クラスは練習用-->
-      <%- include('./component/_c-datetag',{date:'12月31日'}) %>
-    </section>
-
-    <%- include('./component/_c-btn2',{text:'LINEから申し込む'}) %>
-
     <section class="p-breadcrumb">
       <%- include('./component/_c-breadcrumb',{level1:'第1階層',level2:'第2階層',level3:''}) %>
     </section>
+    <section class="p-test">
+      <%- include('./project/_p-card-list',{status:'archive'}) %>
+    </section>
+
   </body>
 </html>

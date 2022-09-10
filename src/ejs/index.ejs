@@ -1,11 +1,11 @@
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body>
+  <body class="l-bg">
     <header class="l-header">
       <%- include('./project/_p-header') %>
     </header>
     
-    <section class="p-hero">
+    <section class="l-hero">
       <%- include('./project/_p-hero') %>
     </section>
 
@@ -13,16 +13,29 @@
       <%- include('./project/_p-top-content') %>
     </section>
 
-    <section class="p-upsdelight c-halfview">
+    <section class="l-sub-content">
+      <%- include('./project/_p-sub-content',{title:'Web業界をより良いものに',text:'業界全体のコーディングスキル向上の一端を担うべく、コーダーの人材教育を目的としたスキルアップ支援サービス「 CodeUps」を提供。モダンなコーディングの実装が可能な人材を育て、業界をより良いものにしていきます。'}) %>
+    </section>
+    
+    <section class="l-upsdelight">
       <%- include('./project/_p-upsdelight') %>
     </section>
 
-    <section class="p-overview c-halfview">
+    <div class="l-works">
+      <%- include('./project/_p-works') %>
+    </div>
+
+    <section class="l-blog">
+      <%- include('./project/_p-blog') %>
+    </section>
+
+    <section class="l-overview">
       <%- include('./project/_p-overview') %>
     </section>
 
-    <section class="l-top-greeting">
-      <%- include('./project/_p-top-greeting', {status:'top'}) %>
+    <section class="l-greeting">
+      <%- include('./project/_p-greeting',{subtitle:'クリエイティブで企業の発展に貢献する',text1:'クリエイティブな職業といわれるWeb制作業界ですが、なによりも大切なのは品質の担保です。今やホームページは持っていて当たり前',text2:'私はもともと、溶接特化の製造業出身で、誰もが知る電力会社、製鉄会社、製紙会社やセメント会社を主要取引先とした企業で勤めていた経験から、ものづくり（クリエイティブ）における品質の担保はなによりも大切であることを学びました。',text3:'ホームページは、企業のWeb上の顔であり、時には集客をする重要な役割を担った欠かせないツールのひとつです。',
+      boss:'代表',name:'松村拓貴'}) %>
     </section>
     
     <footer class="l-footer">

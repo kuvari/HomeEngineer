@@ -1,15 +1,21 @@
 @use "global" as *;
 
 .c-btn {
-  background-image: url(/images/common/more_button.png);
-  background-position: center top;
-  background-size: cover;
+  background-image: url(/images/common/more_button-sp.png);
+  // background-position: center top;
+  background-size: 100% 100%;
   color: #BEA621;
   display: inline-block;
   text-align: center;
-  @include mq(md) {
+  padding: rem(21) rem(0);
+  width: rem(250);
+  box-shadow: 0 rem(10) rem(15) rgba(0,0,0,0.25);
+  border-radius: rem(25) rem(25);
+
+  @include mq("md") {
+    background-image: url(/images/common/more_button-pc.png);
     font-size: rem(24);
-    padding: rem(24) rem(23);
-    width: rem(399);
+    padding: rem(21) rem(0);
+    width: rem(410);
   }
 }

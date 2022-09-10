@@ -4,10 +4,17 @@
         <span class="p-sp-nav__text">close</span>
     </div>
     <ul class="p-sp-nav__items">
-        <li class="p-sp-nav__item"><%- include('../component/_c-nav-link',{link:'index.html', text:'トップ'}) %></li>
-        <li class="p-sp-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'お知らせ'}) %></li>
-        <li class="p-sp-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'ブログ'}) %></li>
-        <li class="p-sp-nav__item"><%- include('../component/_c-nav-link',{link:'#', text:'制作実績'}) %></li>
-        <li class="p-sp-nav__item"><%- include('../component/_c-nav-link',{link:'contact.html', text:'お問い合わせ'}) %></li>
+    <% 
+    const navItems = [
+        {link:'index.html', text:'トップ'},
+        {link:'blog-archive.html', text:'お知らせ'},
+        {link:'blog-single.html', text:'ブログ'},
+        {link:'works-archive.html', text:'制作実績'},
+        {link:'contact.html', text:'お問い合わせ'},
+    ]
+    %> 
+    <% for (var navItem of navItems) {%>
+        <li class="p-sp-nav__item"><a href="<%- navItem.link %>" class="c-nav-link"><%- navItem.text %></a></li>
+        <% } %>
     </ul>
 </div>
