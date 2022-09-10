@@ -119,11 +119,7 @@
   @include mq("md"){
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: rem(90);
-  }
-  @include mq("xl"){
-    margin-left: rem(50);
+    left: 10%;
   }
 }
 .p-works-single__main-left h2{
