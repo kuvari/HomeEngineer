@@ -1,33 +1,17 @@
 @use "global" as *;
 
 .p-works-archive {
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-  @include mq("md"){
-    padding-left: $padding-pc;
-    padding-right: $padding-pc;
-  }
 }
 
 .p-works-archive__block{
   display: flex;
   flex-direction: column;
-  margin-top: rem(40);
   @include mq("md"){
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: rem(90);
-    max-width: 1268px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
-.p-works-archive__block img{
-  width: 100%;
-  @include mq("md"){
-    width: calc(100% / 3);
-  }
-}
+
 .p-works-archive__pagination{
   margin-top: rem(45);
   @include mq("md"){

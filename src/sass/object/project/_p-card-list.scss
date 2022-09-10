@@ -9,22 +9,3 @@
         gap: rem(77) rem(77);
     }
 }
-
-
-// .p-card-list__item + .p-card-list__item {
-//     @include mq("md") {
-//         margin-left: rem(77);
-//     }
-// }
-
-// .p-card-list__item:nth-child(3n + 1) {
-//     @include mq("md") {
-//         margin-left: 0;
-//     }
-// }
-
-// .p-card-list__item:nth-child(n + 4) {
-//     @include mq("md") {
-//         margin-top: rem(77);
-//     }
-// }

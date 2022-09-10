@@ -1,20 +1,23 @@
 <a href="blog-single.html" class="c-card">
-  <figure class="c-card__img">
-    <img src="./images/common/<%= meta.pass %>" alt="">
-  </figure>
-  
-  <div class="c-card__block">
-    <div class="c-card__tag-block">
-      <div class="c-card__datetag">
-        <%- include('../component/_c-datetag',{datetime:meta.datetime,date:meta.date}) %>
+  <div class="c-card__main">
+    <figure class="c-card__img">
+      <img src="./images/common/<%= meta.pass %>" alt="">
+    </figure>
+    
+    <div class="c-card__block">
+      <div class="c-card__tag-block">
+        <div class="c-card__datetag">
+          <%- include('../component/_c-datetag',{datetime:meta.datetime,date:meta.date}) %>
+        </div>
+        <div class="c-card__tags">
+          <%- include('../component/_c-tag',{tag:meta.tag1}) %>
+          <%- include('../component/_c-tag',{tag:meta.tag2}) %>
+        </div>
       </div>
-      <div class="c-card__tags">
-        <%- include('../component/_c-tag',{tag:meta.tag1}) %>
-        <%- include('../component/_c-tag',{tag:meta.tag2}) %>
-      </div>
+    
+      <h3 class="c-card__title"><%= meta.title %></h3>
+      <p class="c-card__text"><%= meta.text %></p>
     </div>
-  
-    <h3 class="c-card__title"><%= meta.title %></h3>
-    <p class="c-card__text"><%= meta.text %></p>
   </div>
-</div>
+  <div class="c-card__mask"></div>
+</a>
