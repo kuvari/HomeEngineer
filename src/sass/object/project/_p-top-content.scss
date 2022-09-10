@@ -1,11 +1,11 @@
 @use "global" as *;
 
-
 .p-top-content {
     position: relative;
-    background-image: url(/images/common/bg01.jpg);
-    z-index: -100;
-    overflow: hidden;  
+    padding-bottom: rem(82);
+    @include mq('md') {
+        padding-bottom: rem(117);
+    }
 }
 
 .p-top-content__vertical-title-a {
