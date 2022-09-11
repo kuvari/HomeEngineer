@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .c-card{
-  width: 100%;
   opacity: 1;
   position: relative;
+  z-index: 0;
+  width: 100%;
   @include mq("md") {
       width: calc((100% - (rem(77) * 2)) / 3);
   }
