@@ -46,3 +46,11 @@
     margin-top: rem(30);
   }
 }
+
+// コンタクトフォーム用
+.c-halfborder__text--form {
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: initial;
+  }
+}
