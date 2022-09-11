@@ -11,13 +11,13 @@
       <%- include('../component/_c-datetag',{datetime:'2022-12-31',date:'12月31日'}) %>
     </div>
     <div class="p-blog-single__tags">
-      <%- include('../component/_c-tag',{tag:'coding'}) %>
-      <%- include('../component/_c-tag',{tag:'coding'}) %>
+      <%- include('../component/_c-tag',{tag:tag1}) %>
+      <%- include('../component/_c-tag',{tag:tag2}) %>
     </div>
   </div>
 
   <div class="p-blog-single__images">
-    <div class="p-blog-single__img"><img src="./images/common/blog-single.jpg" alt="ブログ詳細イメージ"></div>
+    <div class="p-blog-single__img"><img src="<%= path %>" alt="ブログ詳細イメージ"></div>
   </div>
 
   <div class="p-blog-single__lists">

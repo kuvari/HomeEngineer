@@ -3,14 +3,6 @@
 
 .p-blog-single{
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-  @include mq('md') {
-    padding-left: $padding-pc;
-    padding-right: $padding-pc;
-  }
 }
 .p-blog-single__titles{
   position: relative;
@@ -42,6 +34,7 @@
 }
 .p-blog-single__tags{
   display: flex;
+  text-transform: capitalize;
   gap: rem(10) 0;
   flex-direction: column;
   @include mq("md"){

@@ -21,7 +21,7 @@
 	}
 }
 .l-inner--header{
-	max-width: 100%; 
+	width: 100%; 
 	@include mq(md) {
 		max-width: $l-inner + strip-unit($padding-pc) * 2;
 	}

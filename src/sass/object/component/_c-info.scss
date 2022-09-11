@@ -1,20 +1,16 @@
 @use "global" as *;
 
 .c-info{
-  width: 100%;
+  width: rem(593)
 }
 .c-info__block{
   display: none;
   @include mq("md"){
-    width: 40%;
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-left: auto;
     padding: rem(14) rem(40);
-  }
-  @include mq("lg"){
-    width: rem(593);
   }
 }
 
@@ -25,19 +21,33 @@
   font-weight: $bold;
   text-transform: capitalize;
   text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.c-info__center{
-  width: 66%;
-  margin-left: 3%;
+.c-info__center-left{
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: rem(15);
   font-size: rem(18);
   line-height: calc(32 / 18);
   font-weight: $regular;
   padding-left: rem(15);
+  width: calc(30% - rem(15));
   border-left: solid rem(2) $black;
 }
-.c-info__center span{
-  border-bottom: solid rem(1) $black;
-  margin-left: 3%;
+.c-info__center-right{
+  white-space: nowrap;
+  overflow: hidden;
+  height: rem(32);
+  font-size: rem(18);
+  line-height: calc(32 / 18);
+  font-weight: $regular;
+  padding-left: rem(5);
+  width: 36%;
+}
+.c-info__center-right p{
+  display: inline-block;
+  text-decoration:underline;
 }
 .c-info__right{
   width: 15%;

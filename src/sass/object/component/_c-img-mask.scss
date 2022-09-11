@@ -3,6 +3,7 @@
 .c-img-mask {
   cursor: pointer;
   position: relative;
+  display: block;
   width: 100%;
   @include mq("md"){
     width: calc(100% / 3);

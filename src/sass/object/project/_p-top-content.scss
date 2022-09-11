@@ -2,6 +2,7 @@
 
 .p-top-content {
     position: relative;
+    overflow: hidden;
     padding-bottom: rem(82);
     @include mq('md') {
         padding-bottom: rem(117);

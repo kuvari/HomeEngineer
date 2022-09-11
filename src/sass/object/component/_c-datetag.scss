@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .c-datetag{
-  font-size: inherit;
+  font-size: rem(16);
+  line-height: calc(18/16);
   color: $white;
   display: inline-block;
-  padding: rem(4) rem(30) rem(4) rem(25);
+  padding: rem(7) rem(30) rem(7) rem(25);
   background-image: url(../images/common/datetag.png);
   background-size: cover;
   background-repeat: no-repeat;
