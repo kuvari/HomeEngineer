@@ -36,10 +36,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $('.js-nav').on('click', function () {
     $(this).toggleClass('open');
     $('.p-header__sp-nav').toggleClass('open');
+    $('html,body').addClass('is-fixed');
   });
   $('.js-close').on('click', function () {
     $(this).toggleClass('open');
     $('.p-header__sp-nav').toggleClass('open');
+    $('html,body').removeClass('is-fixed');
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)

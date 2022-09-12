@@ -5,6 +5,7 @@
     background-image: url(/images/common/content_bg.jpg);
     z-index: -100;
     padding-top: rem(35);
+    padding-bottom: rem(40);
     @include mq('md') {
         padding-top: rem(65);
         padding-bottom: rem(200);
