@@ -31,6 +31,10 @@
     overflow: scroll;
 }
 
+.p-sp-nav__items::-webkit-scrollbar{
+    display: none;
+}
+
 .p-sp-nav__item a {
     display: block;
     padding-top: rem(21);
