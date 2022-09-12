@@ -72,6 +72,7 @@
 .c-card__tags{
   display: flex;
   gap: rem(10);
+  text-transform: capitalize;
 }
 
 .c-card__block::before{

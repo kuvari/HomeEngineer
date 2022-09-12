@@ -34,7 +34,6 @@
 }
 .p-blog-single__tags{
   display: flex;
-  text-transform: capitalize;
   gap: rem(10) 0;
   flex-direction: column;
   @include mq("md"){
