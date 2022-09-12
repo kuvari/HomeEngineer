@@ -34,6 +34,8 @@
 .c-pagination__item--next {
     background-color: transparent;
     border: none;
+    overflow: hidden;
+    white-space: nowrap;  
     margin-right: rem(20);
     padding: 0;
     @include mq('md') {
@@ -45,6 +47,8 @@
 .c-pagination__item--prev {
     background-color: transparent;
     border: none;
+    overflow: hidden;
+    white-space: nowrap;  
     margin-left: rem(16);
     padding: 0;
     @include mq('md') {

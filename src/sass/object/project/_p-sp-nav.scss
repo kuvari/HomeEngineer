@@ -27,6 +27,12 @@
     transition: .4s;
     height: 100vh;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.p-sp-nav__items::-webkit-scrollbar{
+    display: none;
 }
 
 .p-sp-nav__item a {

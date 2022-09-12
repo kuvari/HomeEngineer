@@ -21,19 +21,19 @@
 .p-footer::before {
     display: block;
     content: "";
-    // width: rem(143);
-    // height: rem(236);
     background-image: url(/images/common/footer_img.png);
-    background-size: cover;
+    background-size: 200%;
+    background-position: 100%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    left: rem(-140);
-    width: rem(348);
-    height: rem(380);
+    bottom: rem(-150);
+    width: 35%;
+    height: 50%;
     @include mq('md') {
-        left: 0;
+        background-position: 100% 20%;
+        bottom: 0;
+        height: 100%;
     }
 }
 
@@ -41,20 +41,19 @@
     display: block;
     content: "";
     background-image: url(/images/common/footer_img.png);
-    background-size: cover;
+    background-size: 200%;
+    background-position: 0;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: rem(-50);
-    right: rem(-120);
+    bottom: rem(-200);
+    right: 0;
     z-index: 1;
-    width: rem(500);
-    height: rem(380);
+    width: 35%;
+    height: 50%;
     @include mq('md') {
+        background-position: 0% 28%;
         bottom: 0;
-        right: rem(-30);
-}
-    @include mq('xl') {
-        right: 0;
+        height: 100%;
     }
 }
 
@@ -78,28 +77,6 @@
     }
 }
 
-// .p-footer__inner::after {
-//     display: block;
-//     content: "";
-//     // width: rem(143);
-//     // height: rem(236);
-//     width: rem(500);
-//     height: rem(380);
-//     background-image: url(/images/common/flower05.png);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     position: absolute;
-//     bottom: rem(-400);
-//     right: rem(-55);
-//     z-index: 0;
-//     @include mq('md') {
-//         bottom: rem(-100);
-//         right: rem(-30);
-//     }
-//     @include mq('xl') {
-//         right: rem(-120);
-//     }
-// }
 .p-footer__info {
     margin-top: rem(70);
     @include mq('md') {
@@ -119,7 +96,6 @@
 }
 
 .p-footer__copyright {
-    // margin-top: rem(500);
     text-align: center;
     @include mq('md') {
         margin-top: rem(23);
@@ -133,23 +109,11 @@
 }
 
 .p-footer__img{
-    position: relative;
-    width: 100%;
     @include mq("md"){
         width: 35%;
         position: absolute;
         top: 0;
         right: 0;
+        z-index: -1;
     }
-}
-.p-footer__img::before{
-    content: "";
-    display: block;
-    padding-top: calc((390 / 412) * 100%);
-}
-.p-footer__img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
 }
