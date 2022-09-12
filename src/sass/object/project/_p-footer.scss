@@ -17,18 +17,21 @@
 .p-footer::before {
     display: block;
     content: "";
-    // width: rem(143);
-    // height: rem(236);
     background-image: url(/images/common/footer_img01.png);
-    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+    background-size: cover;
     z-index: 1;
     bottom: 0;
     left: rem(-140);
+    // background-size:200%;
+    // background-position: 100% 20%;
+    // width:20%;
+    // height:100%;
     width: rem(348);
     height: rem(380);
     @include mq('md') {
+        background-size: cover;
         left: 0;
     }
 }
@@ -36,16 +39,20 @@
 .p-footer::after {
     display: block;
     content: "";
-    background-image: url(/images/common/footer_img02.png);
-    background-size: cover;
+    background-image: url(/images/common/footer_img03.png);
+    background-size: 50%;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: rem(-50);
-    right: rem(-120);
+    bottom: rem(-22);
+    right: rem(-230);
     z-index: 1;
+    width: rem(390);
+    height: rem(412);
+    @include mq('md') {
     width: rem(500);
     height: rem(380);
-    @include mq('md') {
+    background-image: url(/images/common/footer_img02.png);
+    background-size: cover;
         bottom: 0;
         right: rem(-30);
 }
@@ -67,33 +74,33 @@
 }
 
 .p-footer__inner {
-    position: relative;
+    // position: relative;
     @include mq('md') {
     display: flex;
     justify-content: center;
     }
 }
 
-.p-footer__inner::after {
-    display: block;
-    content: "";
-    width: rem(500);
-    height: rem(380);
-    background-image: url(/images/common/flower05.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: rem(-450);
-    right: rem(-55);
-    z-index: 0;
-    @include mq('md') {
-        bottom: rem(-100);
-        right: rem(-30);
-    }
-    @include mq('xl') {
-        right: rem(-120);
-    }
-}
+// .p-footer__inner::after {
+//     display: block;
+//     content: "";
+//     width: rem(500);
+//     height: rem(380);
+//     background-image: url(/images/common/footer_sakura.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     bottom: rem(-450);
+//     right: rem(-55);
+//     z-index: 0;
+//     @include mq('md') {
+//         bottom: rem(-100);
+//         right: rem(-10);
+//     }
+//     @include mq('xl') {
+//         right: rem(-50);
+//     }
+// }
 
 .p-footer__info {
     margin-top: rem(70);
@@ -113,8 +120,16 @@
     }
 }
 
+.p-footer__img {
+    @include mq('md') {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+    }
+}
 .p-footer__copyright {
-    margin-top: rem(500);
+    margin-top: rem(80);
     text-align: center;
     padding-bottom: rem(9);
     @include mq('md') {
