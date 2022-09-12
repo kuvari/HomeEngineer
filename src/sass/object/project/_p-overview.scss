@@ -8,14 +8,18 @@
     padding: rem(60) 0 rem(70);
   }
 }
+.p-overview__title,.c-title{
+z-index: 1;
+}
 .p-overview__title h2{
   color: $white;
 }
 .p-overview__title p{
-  display: none;
+  display: block;
+  color: #2F2F2F;
+  top: rem(-70);
   @include mq("md"){
-    display: block;
-    color: #2F2F2F;
+    top: rem(-90);
   }
 }
 .p-overview__container{
@@ -32,12 +36,6 @@
     align-items: center;
     z-index: 2;
   }
-}
-.p-overview__title h2{
-  color: $white;
-}
-.p-overview__title p{
-  color: #2F2F2F;
 }
 .p-overview__block{
   color: $white;

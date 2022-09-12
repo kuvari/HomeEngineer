@@ -1,9 +1,7 @@
 @use "global" as *;
-
 .p-sp-nav {
     background-color: #E5E1C8;
     height: 100vh;
-    overflow: scroll;
 }
 
 .p-sp-nav__btn {
@@ -13,22 +11,28 @@
     transition: .4s;
     cursor: pointer;
 }
-
 .p-sp-nav__text {
     text-transform: uppercase;
     display: block;
     padding-left: rem(4);
-    font-size: rem(12);
+    font-size: 12px;
     font-weight: $semibold;
     transition: .4s;
 }
 
 .p-sp-nav__items {
-    padding-top: rem(200);
+    padding-top: rem(100);
     padding-bottom: rem(450);
     text-align: center;
     transition: .4s;
-    // height: 100vh;
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.p-sp-nav__items::-webkit-scrollbar{
+    display: none;
 }
 
 .p-sp-nav__item a {
@@ -39,8 +43,9 @@
     font-weight: $semibold;
 }
 
-// html.is-fixed,
-// html.is-fixed body {
-//     height: 100%;
-//     overflow: hidden;
-// }
+html.is-fixed,
+body.is-fixed {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}

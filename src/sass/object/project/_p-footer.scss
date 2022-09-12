@@ -1,50 +1,60 @@
 @use "global" as *;
 
-
+.l-footer__inner{
+    padding-top: rem(70);
+    padding-bottom: rem(9);
+    @include mq('md') {
+        padding-top: rem(73);
+    }
+}
 .p-footer {
     background-image: url(/images/common/footer_bg.jpg);
-    padding-top: rem(70);
     border-top: rem(10) solid $black;
     position: relative;
     z-index: 0;
     overflow: hidden; 
     @include mq('md') {
-        padding-top: rem(73);
         border-top: rem(20) solid $black;
     }
 }
+
 .p-footer::before {
-    @include mq('md') {
     display: block;
     content: "";
-    width: rem(348);
-    height: rem(330);
-    background-image: url(/images/common/flower04.png);
-    background-size: cover;
+    background-image: url(/images/common/footer_img.png);
+    background-size: 200%;
+    background-position: 100%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
+    bottom: rem(-150);
+    width: 35%;
+    height: 50%;
+    @include mq('md') {
+        background-position: 100% 20%;
         bottom: 0;
-        left: rem(-50);
+        height: 100%;
     }
 }
 
 .p-footer::after {
     display: block;
     content: "";
-    width: rem(500);
-    height: rem(330);
-    background-image: url(/images/common/flower05.png);
-    background-size: cover;
+    background-image: url(/images/common/footer_img.png);
+    background-size: 200%;
+    background-position: 0;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: rem(80);
-    right: rem(-55);
+    bottom: rem(-200);
+    right: 0;
     z-index: 1;
+    width: 35%;
+    height: 50%;
     @include mq('md') {
+        background-position: 0% 28%;
         bottom: 0;
-        right: rem(-50);
-}
+        height: 100%;
+    }
 }
 
 .p-footer__logo {
@@ -60,11 +70,13 @@
 }
 
 .p-footer__inner {
+    position: relative;
     @include mq('md') {
     display: flex;
     justify-content: center;
     }
 }
+
 .p-footer__info {
     margin-top: rem(70);
     @include mq('md') {
@@ -84,9 +96,7 @@
 }
 
 .p-footer__copyright {
-    margin-top: rem(402);
     text-align: center;
-    padding-bottom: rem(9);
     @include mq('md') {
         margin-top: rem(23);
     }
@@ -96,4 +106,14 @@
     font-size: rem(13);
     font-weight: $semibold;
     line-height: 2.4615;
+}
+
+.p-footer__img{
+    @include mq("md"){
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
 }

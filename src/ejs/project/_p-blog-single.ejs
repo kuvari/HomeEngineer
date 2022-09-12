@@ -1,90 +1,92 @@
-<div class="l-breadcrumb l-inner">
-  <%- include('../component/_c-breadcrumb',{level1:'トップページ',level2:'お知らせアーカイブ',level3:'お知らせ詳細ページ'}) %>
-</div>
-<div class="p-blog-single l-blog-single__inner">
-  <div class="p-blog-single__titles">
-    <p class="p-blog-single__title"><%= title %></p>
+<div class="p-blog-single l-inner">
+  <div class="l-breadcrumb">
+    <%- include('../component/_c-breadcrumb',{level1:'トップページ',level2:'お知らせアーカイブ',level3:'お知らせ詳細ページ'}) %>
   </div>
+  <div class="p-blog-single l-blog-single__inner">
+    <div class="p-blog-single__titles">
+      <p class="p-blog-single__title"><%= title %></p>
+    </div>
 
-  <div class="p-blog-single__block">
-    <div class="p-blog-single__datetag">
-      <%- include('../component/_c-datetag',{datetime:'2022-12-31',date:'12月31日'}) %>
+    <div class="p-blog-single__block">
+      <div class="p-blog-single__datetag">
+        <%- include('../component/_c-datetag',{datetime:'2022-12-31',date:'12月31日'}) %>
+      </div>
+      <div class="p-blog-single__tags">
+        <%- include('../component/_c-tag',{tag:tag1}) %>
+        <%- include('../component/_c-tag',{tag:tag2}) %>
+      </div>
     </div>
-    <div class="p-blog-single__tags">
-      <%- include('../component/_c-tag',{tag:tag1}) %>
-      <%- include('../component/_c-tag',{tag:tag2}) %>
+
+    <div class="p-blog-single__images">
+      <div class="p-blog-single__img"><img src="<%= path %>" alt="ブログ詳細イメージ"></div>
     </div>
+
+    <div class="p-blog-single__lists">
+      <div class="p-blog-single__dots">
+        <ul class="p-blog-single__dot">
+          <li>リスト</li>
+          <li>リストリスト</li>
+          <li>リストリストリストリストリスト</li>
+        </ul>
+        <ul class="p-blog-single__dot">
+          <li>リスト</li>
+          <li>リストリスト</li>
+          <li>リストリストリストリストリスト</li>
+        </ul>
+        <ul class="p-blog-single__dot">
+          <li>リスト</li>
+          <li>リストリストリストリストリストリストリストリストリストリストリストリスト</li>
+          <li>リストリストリストリストリスト</li>
+        </ul>
+      </div>
+      <div class="p-blog-single__ints">
+        <ol class="p-blog-single__int">
+          <li>番号付きリスト</li>
+          <li>番号付きリスト</li>
+          <li>番号付きリスト</li>
+        </ol>
+        <ol class="p-blog-single__int">
+          <li>番号付きリスト</li>
+          <li>番号付きリスト番号付きリスト</li>
+          <li>番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト</li>
+        </ol>
+        <ol class="p-blog-single__int">
+          <li>番号付きリスト</li>
+          <li>番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト</li>
+          <li>番号付きリスト</li>
+        </ol>
+      </div>
+    </div>
+
+    <blockquote class="p-blog-single__quote">
+      <p>引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。</p>
+      <p><cite>>https://ja.wikipedia.org/wiki/HyperText_Markup_Language</p> 
+    </blockquote>
+
+    <table class="p-blog-single__table">
+      <tbody>
+        <tr>
+          <th>見出し</th>
+          <td>テキストが入ります</td>
+        </tr>
+        <tr>
+          <th>見出し</th>
+          <td>テキストが入ります</td>
+        </tr>
+        <tr>
+          <th>見出し</th>
+          <td>テキストが入ります</td>
+        </tr>
+        <tr>
+          <th>見出し</th>
+          <td>テキストが入ります</td>
+        </tr>
+        <tr>
+          <th>見出し</th>
+          <td>テキストが入ります</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
-
-  <div class="p-blog-single__images">
-    <div class="p-blog-single__img"><img src="<%= path %>" alt="ブログ詳細イメージ"></div>
-  </div>
-
-  <div class="p-blog-single__lists">
-    <div class="p-blog-single__dots">
-      <ul class="p-blog-single__dot">
-        <li>リスト</li>
-        <li>リストリスト</li>
-        <li>リストリストリストリストリスト</li>
-      </ul>
-      <ul class="p-blog-single__dot">
-        <li>リスト</li>
-        <li>リストリスト</li>
-        <li>リストリストリストリストリスト</li>
-      </ul>
-      <ul class="p-blog-single__dot">
-        <li>リスト</li>
-        <li>リストリストリストリストリストリストリストリストリストリストリストリスト</li>
-        <li>リストリストリストリストリスト</li>
-      </ul>
-    </div>
-    <div class="p-blog-single__ints">
-      <ol class="p-blog-single__int">
-        <li>番号付きリスト</li>
-        <li>番号付きリスト</li>
-        <li>番号付きリスト</li>
-      </ol>
-      <ol class="p-blog-single__int">
-        <li>番号付きリスト</li>
-        <li>番号付きリスト番号付きリスト</li>
-        <li>番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト</li>
-      </ol>
-      <ol class="p-blog-single__int">
-        <li>番号付きリスト</li>
-        <li>番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト番号付きリスト</li>
-        <li>番号付きリスト</li>
-      </ol>
-    </div>
-  </div>
-
-  <blockquote class="p-blog-single__quote">
-    <p>引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。引用文章が入ります。</p>
-    <cite>>https://ja.wikipedia.org/wiki/HyperText_Markup_Language
-  </blockquote>
-
-  <table class="p-blog-single__table">
-    <tbody>
-      <tr>
-        <th>見出し</th>
-        <td>テキストが入ります</td>
-      </tr>
-      <tr>
-        <th>見出し</th>
-        <td>テキストが入ります</td>
-      </tr>
-      <tr>
-        <th>見出し</th>
-        <td>テキストが入ります</td>
-      </tr>
-      <tr>
-        <th>見出し</th>
-        <td>テキストが入ります</td>
-      </tr>
-      <tr>
-        <th>見出し</th>
-        <td>テキストが入ります</td>
-      </tr>
-    </tbody>
-  </table>
-
 </div>

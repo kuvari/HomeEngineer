@@ -1,21 +1,28 @@
 @use "global" as *;
 
 .c-btn {
-  background-image: url(/images/common/more_button-sp.png);
-  // background-position: center top;
-  background-size: 100% 100%;
-  color: #BEA621;
   display: inline-block;
+  color: #BEA621;
   text-align: center;
-  padding: rem(21) rem(0);
-  width: rem(250);
-  box-shadow: 0 rem(10) rem(15) rgba(0,0,0,0.25);
-  border-radius: rem(25) rem(25);
-
-  @include mq("md") {
-    background-image: url(/images/common/more_button-pc.png);
-    font-size: rem(24);
-    padding: rem(21) rem(0);
-    width: rem(410);
+  background-image: url(../images/common/c-btn.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: .5s;
+  width: rem(300);
+  padding: rem(18) 0;
+  @include mq("md"){
+    width: rem(400);
+    padding: rem(22) 0;
   }
+}
+.c-btn:hover{
+  transform: translateY(-4px);
+  opacity: 1;
+  -webkit-box-shadow: 0px rem(25) rem(15) rem(-25) #7C7979;
+  box-shadow: 0px rem(25) rem(15) rem(-25) #7C7979;
+  @include mq("md"){
+    -webkit-box-shadow: 0px rem(30) rem(15) rem(-30) #7C7979;
+    box-shadow: 0px rem(30) rem(15) rem(-30) #7C7979;
+  }
+
 }
