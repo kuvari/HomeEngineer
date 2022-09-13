@@ -1,35 +1,20 @@
 <form action="#" class="p-contact-form">
+	<% 
+	const formItems=[
+	  { label:"お名前",type:"text",placeholder:"山田太郎"},
+	  { label:"会社名",type:"text",placeholder:"合同会社 CodeUps"},
+	  { label:"メールアドレス",type:"email",placeholder:"info@codeups.com"}
+	] %> 
 	<dl class="p-contact-form__items">
-			<div class="c-halfborder">
-					<dt class="c-halfborder__title">
-						<label class="p-contact-form__label">お名前</label>
+		<% for (var formItem of formItems) {%> 
+		<%- include('../component/_c-form',{label:formItem.label,type:formItem.type,placeholder:formItem.placeholder}) %>
+		<% } %>
+			<div class="c-form c-form--textarea">
+					<dt class="c-form__title">
+						お問い合わせ内容
 					</dt>
-					<dd class="c-halfborder__text">
-						<input class="p-contact-form__input" type="text" placeholder="田中 太郎" required>
-					</dd>
-			</div>
-			<div class="c-halfborder">
-					<dt class="c-halfborder__title">
-						<label class="p-contact-form__label">会社名</label>
-					</dt>
-					<dd class="c-halfborder__text">
-						<input class="p-contact-form__input" type="text" placeholder="合同会社 CodeUps" required>
-					</dd>
-			</div>
-			<div class="c-halfborder">
-					<dt class="c-halfborder__title">
-						<label class="p-contact-form__label">メールアドレス</label>
-					</dt>
-					<dd class="c-halfborder__text">
-						<input class="p-contact-form__input" type="email" placeholder="info@codeups.com" required>
-					</dd>
-			</div>
-			<div class="c-halfborder c-halfborder--textarea">
-					<dt class="c-halfborder__title">
-						<label class="p-contact-form__label">お問い合わせ内容</label>
-					</dt>
-					<dd class="c-halfborder__text">
-						<textarea class="p-contact-form__textarea" name="contact" placeholder="お問い合わせ内容に関する詳細をお書きください" cols="50" rows="8" required></textarea>
+					<dd class="c-form__text">
+						<textarea class="c-form__textarea" name="contact" placeholder="お問い合わせ内容に関する詳細をお書きください" cols="50" rows="8" required></textarea>
 					</dd>
 			</div>
 		</dl>
