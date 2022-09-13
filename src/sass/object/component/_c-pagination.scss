@@ -58,10 +58,12 @@
 }
 
 .c-pagination__item:hover {
-    cursor: pointer;
-    background-color: transparent;
-    border: transparent;
-    transition: .3s;
+    @include mq('md') {
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
 }
 
 .c-pagination__item--page {

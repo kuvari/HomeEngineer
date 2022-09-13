@@ -4,6 +4,7 @@
   font-size: rem(20);
   @include mq("md"){
     display: flex;
+    align-items: center;
   }
 }
 .c-halfborder__title{
@@ -47,6 +48,13 @@
 .c-halfborder+.c-halfborder{
   margin-top: rem(36);
   @include mq("md"){
-    margin-top: rem(30);
+    margin-top: initial;
+  }
+}
+
+.c-halfborder.c-halfborder--textarea {
+  @include mq("md"){
+    display: flex;
+    align-items: baseline;
   }
 }

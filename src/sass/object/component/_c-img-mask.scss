@@ -38,7 +38,9 @@
   transition: opacity .6s ease;/* ゆっくりopacityのみへ変化させる */
 }
 .c-img-mask__mask:hover {
-  opacity: 1;/* hoverしたら透過しない(表示させる) */
+  @include mq("md") {
+    opacity: 1;/* hoverしたら透過しない(表示させる) */
+  }
 }
 .c-img-mask__mask p {
   width: 80%;/* テキストを横幅いっぱいにならないようにする */

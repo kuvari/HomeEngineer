@@ -120,5 +120,7 @@
   opacity: 0;/* 最初は透明（非表示） */
 }
 .c-card__mask.is-active {
-  opacity: 1;/* hoverしたら透過しない(表示させる) */
+  @include mq("md") {
+    opacity: 1;/* hoverしたら透過しない(表示させる) */
+  }
 }

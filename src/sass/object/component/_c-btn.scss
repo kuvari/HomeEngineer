@@ -7,7 +7,7 @@
   background-image: url(../images/common/c-btn.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  transition: .5s;
+  transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
   width: rem(300);
   padding: rem(18) 0;
   @include mq("md"){
@@ -16,11 +16,9 @@
   }
 }
 .c-btn:hover{
-  transform: translateY(-4px);
-  opacity: 1;
-  -webkit-box-shadow: 0px rem(25) rem(15) rem(-25) #7C7979;
-  box-shadow: 0px rem(25) rem(15) rem(-25) #7C7979;
   @include mq("md"){
+    opacity: 1;
+    transform: translateY(-4px);
     -webkit-box-shadow: 0px rem(30) rem(15) rem(-30) #7C7979;
     box-shadow: 0px rem(30) rem(15) rem(-30) #7C7979;
   }

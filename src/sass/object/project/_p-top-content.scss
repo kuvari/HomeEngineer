@@ -50,18 +50,6 @@
     }
 }
 
-// .p-top-content__title-a {
-//     max-width: rem(370);
-//     width: 100%;
-//     margin-left: auto;
-//     margin-right: auto;
-//     aspect-ratio: 375 / 300;
-//     @include mq('md') {
-//         margin-left: initial;
-//         margin-right: initial;
-//     }
-// }
-
 .p-top-content__body-a {
     position: relative;
     @include mq('md') {
@@ -106,11 +94,10 @@
     font-size: rem(18);
     font-weight: $regular;
     line-height: 2;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     @include mq('md') {
         max-width: rem(540);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -125,20 +112,6 @@
         z-index: -1;
     }
 }
-// .p-top-content__title-b {
-//     max-width: rem(373);
-//     width: 100%;
-//     margin-left: auto;
-//     margin-right: auto;
-//     aspect-ratio: 373 / 138;
-//     margin-top: rem(66);
-//     @include mq('md') {
-//         max-width: rem(700);
-//         margin-left: initial;
-//         margin-right: initial;
-//         margin-left: rem(10);
-//     }
-// }
 
 .p-top-content__img-b {
     position: relative;
@@ -183,9 +156,10 @@
     line-height: 1.7778;
     color: #4D4D4D;
     position: relative;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: 80%;
+    // margin-left: auto;
+    // margin-right: auto;
+
 }
 
 .p-top-content__quotation::before {
@@ -198,24 +172,13 @@
     left: rem(-20);
 }
 
-// 付け忘れ？なしで良い？
-// .p-top-content__quotation::after {
-//     display: block;
-//     content: "“";
-//     font-size: rem(116);
-//     color: #B5B5B5;
-//     position: absolute;
-//     bottom: rem(-130);
-//     right: rem(-20);
-// }
-
 .p-top-content__text-b {
     font-size: rem(18);
     font-weight: $regular;
     line-height: 2;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: 80%;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .p-top-content__text-a span,

@@ -28,10 +28,12 @@
     bottom: rem(22);
     left: 50%;
     transform: translateX(-50%);
-    transition: .4s;
+    transition: .4s ease-in-out;
     display: none;
 }
 
 .p-pc-nav__item:hover::after {
-    display: block;
+    @include mq("md") {
+        display: block;
+    }
 }

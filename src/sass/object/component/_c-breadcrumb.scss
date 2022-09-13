@@ -24,5 +24,7 @@ font-weight: $semibold;
 content: "";
 }
 .c-breadcrumb li a:hover{
-opacity: 0.8;
+  @include mq("md") {
+    opacity: 0.8;
+  }
 }

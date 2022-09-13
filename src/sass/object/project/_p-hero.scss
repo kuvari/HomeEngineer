@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .p-hero{
-  position: relative;
-  border-bottom: rem(20) solid $black;
-  z-index: -1;
+  @include mq("md"){
+    position: relative;
+    border-bottom: rem(20) solid $black;
+    z-index: -1;
+  }
 }
 .p-hero__info{
   position: absolute;

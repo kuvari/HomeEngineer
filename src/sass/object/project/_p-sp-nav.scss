@@ -2,13 +2,13 @@
 .p-sp-nav {
     background-color: #E5E1C8;
     height: 100vh;
+    padding-top: rem(15);
 }
 
 .p-sp-nav__btn {
     width: rem(50);
-    padding-top: rem(20);
     margin-left: rem(38);
-    transition: .4s;
+    transition: .4s ease-in-out;
     cursor: pointer;
 }
 .p-sp-nav__text {
@@ -17,14 +17,14 @@
     padding-left: rem(4);
     font-size: 12px;
     font-weight: $semibold;
-    transition: .4s;
+    transition: .4s ease-in-out;
 }
 
 .p-sp-nav__items {
     padding-top: rem(100);
     padding-bottom: rem(450);
     text-align: center;
-    transition: .4s;
+    transition: .4s ease-in-out;
     height: 100vh;
     overflow: scroll;
     -ms-overflow-style: none;

@@ -11,7 +11,7 @@
   color: $white;
   background-color: #06C755;
   border-radius: rem(25);
-  transition: 0s;
+  transition: 0s ease-in-out;
 }
 .c-btn-sub::before{
   content: "";
@@ -25,9 +25,13 @@
   z-index: -1;
 }
 .c-btn-sub:hover::before{
-  display: none;
+  @include mq("md") {
+    display: none;
+  }
 }
 .c-btn-sub:hover{
-  transform: translateY(4px);
-  opacity: 1;
+  @include mq("md") {
+    transform: translateY(4px);
+    opacity: 1;
+  }
 }
