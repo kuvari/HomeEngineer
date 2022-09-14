@@ -4,11 +4,15 @@
   font-size: rem(16);
   line-height: calc(18/16);
   color: $white;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: rem(7) rem(30) rem(7) rem(25);
   background-image: url(../images/common/datetag.png);
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
   white-space: nowrap;
+  @include mq("sm"){
+    font-size: rem(14);
+  }
 }
