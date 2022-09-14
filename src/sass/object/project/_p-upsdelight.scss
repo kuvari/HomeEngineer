@@ -162,7 +162,7 @@
 .p-upsdelight__left:hover:before{
   @include mq("md") {
     background-image: url(../images/common/hanabi-white.png);
-    rotate: 180deg;
+    transform: rotate(180deg);
   }
 }
 .p-upsdelight__right::after{
@@ -182,6 +182,6 @@
 .p-upsdelight__right:hover:after{
   @include mq("md") {
     background-image: url(../images/common/hanabi-black.png);
-    rotate: 180deg;
+    transform: rotate(180deg);
   }
 }
