@@ -11,9 +11,9 @@
   font-size: rem(20);
   line-height: 2.5;
   color: $black;
+  position: relative;
   @include mq("md"){
     width: 35%;
-    position: relative;
   }
 }
 .c-form__title::after{
@@ -41,7 +41,7 @@
   }
 }
 
-.c-form__title::before{
+.c-form__text::before{
   content: "";
   display: block;
   background-color: $black;
