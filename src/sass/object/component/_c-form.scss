@@ -39,7 +39,7 @@
   top: 0;
   left: rem(10);
   @include mq("md"){
-    left: rem(-30);
+    left: rem(-31);
     top: rem(6);
   }
 }
@@ -84,6 +84,6 @@
 .c-form.c-form--textarea {
   @include mq("md"){
     display: flex;
-    align-items: baseline;
+    align-items: normal;
   }
 }
