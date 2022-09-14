@@ -1,10 +1,12 @@
 <div class="c-info">
   <div class="c-info__block">
     <p class="c-info__left"><%= left %></p>
-    <p class="c-info__center-left"><%= date %></p>
-    <div class="c-info__center-right">
-      <p><%= center %></p>
+    <div class="c-info__center">
+      <p class="c-info__center-left"><%= date %></p>
+      <p class="c-info__center-right"><%= center %></p>
     </div>
-    <a href="<%= link %>" class="c-info__right"><%= right %></a>
+    <div class="c-info__right">
+      <a href="<%= link %>"><%= right %></a>
+    </div>
   </div>
 </div>
