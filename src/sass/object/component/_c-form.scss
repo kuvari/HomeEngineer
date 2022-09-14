@@ -4,7 +4,6 @@
   font-size: rem(20);
   @include mq("md"){
     display: flex;
-    align-items: center;
   }
 }
 
@@ -14,6 +13,19 @@
   color: $black;
   @include mq("md"){
     width: 35%;
+    position: relative;
+  }
+}
+.c-form__title::after{
+  @include mq("md"){
+  content: "";
+  display: block;
+  background-color: $black;
+  height: rem(31);
+  width: rem(1);
+  position: absolute;
+  top: rem(10);
+  right: 0;
   }
 }
 
@@ -29,18 +41,17 @@
   }
 }
 
-.c-form__text::before{
+.c-form__title::before{
   content: "";
   display: block;
   background-color: $black;
-  height: rem(30);
+  height: rem(31);
   width: rem(1);
   position: absolute;
   top: 0;
   left: rem(10);
   @include mq("md"){
-    left: rem(-31);
-    top: rem(6);
+    display: none;
   }
 }
 
@@ -51,7 +62,7 @@
     font-weight: $semibold;
     line-height: 1.4286;
     color: #A8A8A8;
-    padding: rem(9) rem(16);
+    padding: rem(13) rem(16);
     max-width: rem(480);
     width: 100%;
     @include mq('md') {
@@ -76,8 +87,10 @@
   padding: rem(9) rem(16);
   max-width: rem(480);
   width: 100%;
+  height: 100%;
   @include mq('md') {
       max-width: rem(365);
+      padding: 0 rem(16);
   }
 }
 
