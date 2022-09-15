@@ -4,8 +4,7 @@
   font-size: rem(14);
   line-height: calc(18/14);
   color: $white;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   padding: rem(6) rem(10);
   background-image: url(../images/common/tag_bg.png);
   background-size: cover;
