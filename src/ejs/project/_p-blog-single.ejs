@@ -6,7 +6,9 @@
     <h2 class="p-blog-single__title"><%= title %></h2>
 
     <div class="p-blog-single__block">
-      <%- include('../component/_c-datetag',{datetime:'2022-12-31',date:'12月31日'}) %>
+      <div class="p-blog-single__datetag">
+        <%- include('../component/_c-datetag',{datetime:'2022-12-31',date:'12月31日'}) %>
+      </div>
       <div class="p-blog-single__tags">
         <%- include('../component/_c-tag',{tag:tag1}) %>
         <%- include('../component/_c-tag',{tag:tag2}) %>
