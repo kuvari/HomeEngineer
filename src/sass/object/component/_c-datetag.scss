@@ -1,14 +1,15 @@
 @use "global" as *;
 
 .c-datetag{
-  font-size: rem(16);
-  line-height: calc(18/16);
+  font-size: rem(14);
+  line-height: calc(18/14);
   color: $white;
   display: inline-block;
-  padding: rem(7) rem(30) rem(7) rem(25);
+  padding: rem(6) rem(30) rem(6) rem(25);
   background-image: url(../images/common/datetag.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
   white-space: nowrap;
+  height: 100%;
 }

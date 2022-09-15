@@ -36,7 +36,9 @@
   z-index: -2;
 }
 .c-card__img.is-active{
-  z-index: 0;
+  @include mq("md"){
+    z-index: 0;
+  }
 }
 .c-card__img::before{
   content: "";

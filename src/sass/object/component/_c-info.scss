@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .c-info{
-  width: rem(593)
+  display: none;
+  @include mq("md"){
+    display: block;
+    width: rem(593)
+  }
 }
 .c-info__block{
   display: none;
@@ -13,60 +17,90 @@
     padding: rem(14) rem(40);
   }
 }
-
+.c-info__block:after {
+  display: none;
+  @include mq("md"){
+    display: block;
+    content: '';
+    width: rem(6);
+    height: rem(6);
+    border: 0;
+    border-top: solid rem(2) $black;
+    border-right: solid rem(2) $black;
+    transform: rotate(45deg);
+    margin-top: rem(6);
+  }
+}
 .c-info__left{
-  width: 13%;
-  font-size: rem(24);
-  line-height: calc(36 / 24);
-  font-weight: $bold;
-  text-transform: capitalize;
-  text-align: right;
-  white-space: nowrap;
-  overflow: hidden;
+  display: none;
+  @include mq("md"){
+    display: block;
+    width: 13%;
+    font-size: rem(24);
+    line-height: calc(36 / 24);
+    font-weight: $bold;
+    text-transform: capitalize;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+.c-info__center{
+  display: none;
+  @include mq("md"){
+    margin-left: rem(15);
+    border-left: solid rem(2) $black;
+    width: 72%;
+    display: flex;
+  }
 }
 .c-info__center-left{
-  white-space: nowrap;
-  overflow: hidden;
-  margin-left: rem(15);
-  font-size: rem(18);
-  line-height: calc(32 / 18);
-  font-weight: $regular;
-  padding-left: rem(15);
-  width: calc(30% - rem(15));
-  border-left: solid rem(2) $black;
+  display: none;
+  @include mq("md"){
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    font-weight: $regular;
+    padding-left: rem(15);
+    width: 40%;
+  }
 }
 .c-info__center-right{
-  white-space: nowrap;
-  overflow: hidden;
-  height: rem(32);
-  font-size: rem(18);
-  line-height: calc(32 / 18);
-  font-weight: $regular;
-  padding-left: rem(5);
-  width: 36%;
-}
-.c-info__center-right p{
-  display: inline-block;
-  text-decoration:underline;
+  display: none;
+  @include mq("md"){
+    white-space: nowrap;
+    overflow: hidden;
+    height: rem(32);
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    font-weight: $regular;
+    padding-left: rem(5);
+    width: 60%;
+    display: inline-block;
+    text-decoration:underline;
+  }
 }
 .c-info__right{
-  width: 15%;
-  display: inline-block;
-  font-size: rem(18);
-  line-height: calc(32 / 18);
-  font-weight: $regular;
-  position: relative;
-  text-decoration: none;
+  display: none;
+  @include mq("md"){
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 15%;
+    padding-right: rem(3);
+    font-size: rem(18);
+    line-height: calc(32 / 18);
+    font-weight: $regular;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
-.c-info__right:after {
-  content: '';
-  width: rem(6);
-  height: rem(6);
-  border: 0;
-  border-top: solid rem(2) $black;
-  border-right: solid rem(2) $black;
-  position: absolute;
-  top: 54%;
-  right: 0;
-  transform: rotate(45deg);
+.c-info__right a{
+  display: none;
+  @include mq("md"){
+    display: inline-block;
+    text-decoration: none;
+  }
 }
