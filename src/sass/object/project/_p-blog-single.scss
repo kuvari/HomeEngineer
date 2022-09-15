@@ -28,6 +28,12 @@
     justify-content: initial;
   }
 }
+.p-blog-single__datetag{
+  height: calc((100% - rem(20)) / 2);
+  @include mq("md"){
+    height: 100%;
+  }
+}
 .p-blog-single__tags{
   display: flex;
   text-transform: capitalize;
