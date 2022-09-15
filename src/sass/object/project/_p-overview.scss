@@ -3,7 +3,10 @@
 .p-overview{
   background-image: url(../images/common/map.jpg);
   background-size: cover;
-  padding-top: 70%;
+  padding-top: 100%;
+  @include mq("sm"){
+    padding-top: 70%;
+  }
   @include mq("md"){
     padding: rem(60) 0 rem(70);
   }

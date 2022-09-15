@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .c-tag{
-  font-size: rem(16);
-  line-height: calc(18/16);
+  font-size: rem(14);
+  line-height: calc(18/14);
   color: $white;
   display: flex;
   align-items: center;
@@ -13,7 +13,4 @@
   margin-left: rem(10);
   overflow: hidden;
   white-space: nowrap;
-  @include mq("sm"){
-    font-size: rem(14);
-  }
 }
