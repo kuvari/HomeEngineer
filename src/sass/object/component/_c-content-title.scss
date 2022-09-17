@@ -5,9 +5,11 @@
     aspect-ratio: 370 / 303;
     max-width: rem(370);
     width: 100%;
+    margin: auto;
     @include mq('md') {
     aspect-ratio: 667 / 553;
     max-width: rem(667);
+    margin: initial;
     }
 }
 
@@ -15,9 +17,11 @@
     aspect-ratio: 370 / 138;
     max-width: rem(370);
     width: 100%;
+    margin: auto;
     @include mq('md') {
         aspect-ratio: 800 / 286;
         max-width: rem(800);
+        margin: initial;
     }
 }
 

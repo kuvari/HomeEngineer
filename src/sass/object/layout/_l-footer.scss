@@ -1,5 +1,13 @@
 @use "global" as *;
 
+.l-footer__inner{
+  padding-top: rem(70);
+  padding-bottom: rem(9);
+  @include mq('md') {
+      padding-top: rem(73);
+  }
+}
+
 .l-footer--top{
   margin-top: rem(70);
   @include mq("md"){
