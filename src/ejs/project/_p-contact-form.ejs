@@ -1,13 +1,13 @@
-<form action="#" class="p-contact-form">
+<form action="mail.php" method="post" class="p-contact-form">
 	<% 
 	const formItems=[
-	  { label:"お名前",type:"text",placeholder:"鈴木　花"},
-	  { label:"会社名",type:"text",placeholder:"合同会社 HomeEngineer"},
-	  { label:"メールアドレス",type:"email",placeholder:"info@codeups.com"}
+	  { label:"お名前",type:"text",name:"name",placeholder:"鈴木　花"},
+	  { label:"会社名",type:"text",name:"company",placeholder:"合同会社 HomeEnginnire"},
+	  { label:"メールアドレス",type:"email",name:"email",placeholder:"info@codeups.com"}
 	] %> 
 	<dl class="p-contact-form__items">
 		<% for (var formItem of formItems) {%> 
-		<%- include('../component/_c-form',{label:formItem.label,type:formItem.type,placeholder:formItem.placeholder}) %>
+		<%- include('../component/_c-form',{label:formItem.label,type:formItem.type,name:formItem.name,placeholder:formItem.placeholder}) %>
 		<% } %>
 			<div class="c-form c-form--textarea">
 					<dt class="c-form__title">
@@ -19,6 +19,6 @@
 			</div>
 		</dl>
 	<div class="p-contact-form__btn">
-			<%- include('../component/_c-btn',{text:'送信', link:'#'}) %>
+			<%- include('../component/_c-btn-form',{text:'送信'}) %>
 	</div>
 </form>

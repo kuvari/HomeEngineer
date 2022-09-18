@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-footer {
-    background-image: url(/images/common/footer_bg.jpg);
+    background-color: rgba(229, 225, 200, .8);
     border-top: rem(10) solid $black;
     position: relative;
     z-index: 0;
