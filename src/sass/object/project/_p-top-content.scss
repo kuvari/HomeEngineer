@@ -12,28 +12,28 @@
 .p-top-content__vertical-title-a {
     position: absolute;
     top: rem(240);
-    right: -15%;
+    right: rem(-45);
     z-index: -2;
     max-width: rem(206);
     width: 100%;
     @include mq('md') {
         max-width: rem(517);
         top: rem(250);
-        right: -6%;
+        right: rem(-120);
     }
 }
 
 .p-top-content__vertical-title-b {
     position: absolute;
     bottom: rem(800);
-    left: -12%;
+    left: rem(-75);
     z-index: -2;
     max-width: rem(179);
     width: 100%;
     @include mq('md') {
         max-width: rem(517);
         bottom: rem(-200);
-        left: -10%;
+        left: rem(-120);
     }
 }
 
