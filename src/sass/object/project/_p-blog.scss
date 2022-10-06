@@ -1,18 +1,23 @@
 @use "global" as *;
 
 .p-blog{
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.4);
+}
+.p-blog__inner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(17, 17, 17, 0.4);
     padding-top: rem(65);
     padding-bottom: rem(80);
     @include mq("md"){
         padding-top: rem(135);
         padding-bottom: rem(100);
+        max-width: 1404px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
-
 .p-blog__title h2{
     color: $white;
 }
